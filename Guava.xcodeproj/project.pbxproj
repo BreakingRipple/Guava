@@ -3,18 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2E17C5AD26CF956200AE335F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E17C5AC26CF956200AE335F /* AppDelegate.swift */; };
 		2E17C5AF26CF956200AE335F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E17C5AE26CF956200AE335F /* SceneDelegate.swift */; };
-		2E17C5B126CF956200AE335F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E17C5B026CF956200AE335F /* ViewController.swift */; };
 		2E17C5B426CF956200AE335F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E17C5B226CF956200AE335F /* Main.storyboard */; };
 		2E17C5B726CF956200AE335F /* Guava.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2E17C5B526CF956200AE335F /* Guava.xcdatamodeld */; };
 		2E17C5B926CF956400AE335F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E17C5B826CF956400AE335F /* Assets.xcassets */; };
 		2E17C5BC26CF956400AE335F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E17C5BA26CF956400AE335F /* LaunchScreen.storyboard */; };
 		2E17C5C426D0938D00AE335F /* Diary.MD in Resources */ = {isa = PBXBuildFile; fileRef = 2E17C5C326D0938D00AE335F /* Diary.MD */; };
+		2EC348D526D0D75700CAA637 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348D426D0D75700CAA637 /* HomeVC.swift */; };
+		2EC348D926D109D500CAA637 /* FollowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348D826D109D500CAA637 /* FollowVC.swift */; };
+		2EC348DB26D10A0500CAA637 /* DiscoveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348DA26D10A0500CAA637 /* DiscoveryVC.swift */; };
+		2EC348DD26D10A3C00CAA637 /* NearByVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348DC26D10A3C00CAA637 /* NearByVC.swift */; };
+		2EC348DF26D1120F00CAA637 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348DE26D1120F00CAA637 /* Constants.swift */; };
 		6BBCA0A7FAC2BEB1B5843C81 /* Pods_Guava.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88842F55AA7CA6BB058A467 /* Pods_Guava.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,13 +27,17 @@
 		2E17C5A926CF956200AE335F /* Guava.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guava.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E17C5AC26CF956200AE335F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E17C5AE26CF956200AE335F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2E17C5B026CF956200AE335F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2E17C5B326CF956200AE335F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2E17C5B626CF956200AE335F /* Guava.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Guava.xcdatamodel; sourceTree = "<group>"; };
 		2E17C5B826CF956400AE335F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E17C5BB26CF956400AE335F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E17C5BD26CF956400AE335F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E17C5C326D0938D00AE335F /* Diary.MD */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Diary.MD; sourceTree = "<group>"; };
+		2EC348D426D0D75700CAA637 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		2EC348D826D109D500CAA637 /* FollowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowVC.swift; sourceTree = "<group>"; };
+		2EC348DA26D10A0500CAA637 /* DiscoveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryVC.swift; sourceTree = "<group>"; };
+		2EC348DC26D10A3C00CAA637 /* NearByVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByVC.swift; sourceTree = "<group>"; };
+		2EC348DE26D1120F00CAA637 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D83220223EB8DECDFA4C3E95 /* Pods-Guava.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guava.debug.xcconfig"; path = "Target Support Files/Pods-Guava/Pods-Guava.debug.xcconfig"; sourceTree = "<group>"; };
 		F88842F55AA7CA6BB058A467 /* Pods_Guava.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Guava.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -69,8 +77,9 @@
 			children = (
 				2E17C5AC26CF956200AE335F /* AppDelegate.swift */,
 				2E17C5AE26CF956200AE335F /* SceneDelegate.swift */,
-				2E17C5B026CF956200AE335F /* ViewController.swift */,
 				2E17C5B226CF956200AE335F /* Main.storyboard */,
+				2EC348DE26D1120F00CAA637 /* Constants.swift */,
+				2EC348E026D1139200CAA637 /* Home */,
 				2E17C5B826CF956400AE335F /* Assets.xcassets */,
 				2E17C5BA26CF956400AE335F /* LaunchScreen.storyboard */,
 				2E17C5BD26CF956400AE335F /* Info.plist */,
@@ -78,6 +87,17 @@
 				2E17C5C326D0938D00AE335F /* Diary.MD */,
 			);
 			path = Guava;
+			sourceTree = "<group>";
+		};
+		2EC348E026D1139200CAA637 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2EC348D426D0D75700CAA637 /* HomeVC.swift */,
+				2EC348D826D109D500CAA637 /* FollowVC.swift */,
+				2EC348DA26D10A0500CAA637 /* DiscoveryVC.swift */,
+				2EC348DC26D10A3C00CAA637 /* NearByVC.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		43E32712890A0F449EDC7CCD /* Frameworks */ = {
@@ -94,7 +114,6 @@
 				D83220223EB8DECDFA4C3E95 /* Pods-Guava.debug.xcconfig */,
 				0281AB15334B50D2665EDC1E /* Pods-Guava.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -213,10 +232,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E17C5B126CF956200AE335F /* ViewController.swift in Sources */,
+				2EC348DD26D10A3C00CAA637 /* NearByVC.swift in Sources */,
 				2E17C5AD26CF956200AE335F /* AppDelegate.swift in Sources */,
+				2EC348D526D0D75700CAA637 /* HomeVC.swift in Sources */,
+				2EC348D926D109D500CAA637 /* FollowVC.swift in Sources */,
 				2E17C5B726CF956200AE335F /* Guava.xcdatamodeld in Sources */,
 				2E17C5AF26CF956200AE335F /* SceneDelegate.swift in Sources */,
+				2EC348DB26D10A0500CAA637 /* DiscoveryVC.swift in Sources */,
+				2EC348DF26D1120F00CAA637 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
