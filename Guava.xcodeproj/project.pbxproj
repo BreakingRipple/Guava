@@ -14,9 +14,12 @@
 		2E17C5B726CF956200AE335F /* Guava.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2E17C5B526CF956200AE335F /* Guava.xcdatamodeld */; };
 		2E17C5B926CF956400AE335F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E17C5B826CF956400AE335F /* Assets.xcassets */; };
 		2E17C5BC26CF956400AE335F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E17C5BA26CF956400AE335F /* LaunchScreen.storyboard */; };
+		2E17C5C426D0938D00AE335F /* Diary.MD in Resources */ = {isa = PBXBuildFile; fileRef = 2E17C5C326D0938D00AE335F /* Diary.MD */; };
+		6BBCA0A7FAC2BEB1B5843C81 /* Pods_Guava.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88842F55AA7CA6BB058A467 /* Pods_Guava.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0281AB15334B50D2665EDC1E /* Pods-Guava.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guava.release.xcconfig"; path = "Target Support Files/Pods-Guava/Pods-Guava.release.xcconfig"; sourceTree = "<group>"; };
 		2E17C5A926CF956200AE335F /* Guava.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guava.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E17C5AC26CF956200AE335F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E17C5AE26CF956200AE335F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +29,9 @@
 		2E17C5B826CF956400AE335F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E17C5BB26CF956400AE335F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E17C5BD26CF956400AE335F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E17C5C326D0938D00AE335F /* Diary.MD */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Diary.MD; sourceTree = "<group>"; };
+		D83220223EB8DECDFA4C3E95 /* Pods-Guava.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guava.debug.xcconfig"; path = "Target Support Files/Pods-Guava/Pods-Guava.debug.xcconfig"; sourceTree = "<group>"; };
+		F88842F55AA7CA6BB058A467 /* Pods_Guava.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Guava.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BBCA0A7FAC2BEB1B5843C81 /* Pods_Guava.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +51,8 @@
 			children = (
 				2E17C5AB26CF956200AE335F /* Guava */,
 				2E17C5AA26CF956200AE335F /* Products */,
+				DA7BFB8CB5278BC6E2EB5BBE /* Pods */,
+				43E32712890A0F449EDC7CCD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,8 +75,27 @@
 				2E17C5BA26CF956400AE335F /* LaunchScreen.storyboard */,
 				2E17C5BD26CF956400AE335F /* Info.plist */,
 				2E17C5B526CF956200AE335F /* Guava.xcdatamodeld */,
+				2E17C5C326D0938D00AE335F /* Diary.MD */,
 			);
 			path = Guava;
+			sourceTree = "<group>";
+		};
+		43E32712890A0F449EDC7CCD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F88842F55AA7CA6BB058A467 /* Pods_Guava.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA7BFB8CB5278BC6E2EB5BBE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D83220223EB8DECDFA4C3E95 /* Pods-Guava.debug.xcconfig */,
+				0281AB15334B50D2665EDC1E /* Pods-Guava.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +105,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E17C5C026CF956400AE335F /* Build configuration list for PBXNativeTarget "Guava" */;
 			buildPhases = (
+				D9C2335AE27451AEF2BB0150 /* [CP] Check Pods Manifest.lock */,
 				2E17C5A526CF956200AE335F /* Sources */,
 				2E17C5A626CF956200AE335F /* Frameworks */,
 				2E17C5A726CF956200AE335F /* Resources */,
+				3B0B4D0A904E09DDFF1FB681 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,6 +157,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E17C5C426D0938D00AE335F /* Diary.MD in Resources */,
 				2E17C5BC26CF956400AE335F /* LaunchScreen.storyboard in Resources */,
 				2E17C5B926CF956400AE335F /* Assets.xcassets in Resources */,
 				2E17C5B426CF956200AE335F /* Main.storyboard in Resources */,
@@ -134,6 +165,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B0B4D0A904E09DDFF1FB681 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Guava/Pods-Guava-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Guava/Pods-Guava-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Guava/Pods-Guava-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9C2335AE27451AEF2BB0150 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Guava-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2E17C5A526CF956200AE335F /* Sources */ = {
@@ -287,6 +360,7 @@
 		};
 		2E17C5C126CF956400AE335F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D83220223EB8DECDFA4C3E95 /* Pods-Guava.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +380,7 @@
 		};
 		2E17C5C226CF956400AE335F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0281AB15334B50D2665EDC1E /* Pods-Guava.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
