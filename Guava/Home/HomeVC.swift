@@ -12,18 +12,34 @@ class HomeVC: ButtonBarPagerTabStripViewController {
 
     override func viewDidLoad() {
         
+        // MARK: SET TOP bar, button, slide
+        
+        //MARK: -
+        
         // selectedBar -- the line under the button
         settings.style.selectedBarBackgroundColor = UIColor(named: "main")!
         settings.style.selectedBarHeight = 2
         
         settings.style.buttonBarItemBackgroundColor = .clear
         settings.style.buttonBarItemTitleColor = .label
-        settings.style.buttonBarItemFont = .systemFont(ofSize: 13)
+        settings.style.buttonBarItemFont = .boldSystemFont(ofSize: 14)
         settings.style.buttonBarItemLeftRightMargin = 0
         
         
-        
         super.viewDidLoad()
+        
+        containerView.bounces = false
+        
+        changeCurrentIndexProgressive = { (oldCell: ButtonBarViewCell?, newCell: ButtonBarViewCell?, progressPercentage: CGFloat, changeCurrentIndex: Bool, animated: Bool) -> Void in
+            guard changeCurrentIndex == true else { return }
+
+            oldCell?.label.textColor = .secondaryLabel
+            newCell?.label.textColor = .label
+
+        }
+       
+        
+
         
     }
     
@@ -37,7 +53,7 @@ class HomeVC: ButtonBarPagerTabStripViewController {
         let nearByVC = storyboard!.instantiateViewController(identifier: kNearByVCID)
         let discoveryVC = storyboard!.instantiateViewController(identifier: kDiscoveryVCID)
         
-        return [followVC, nearByVC, discoveryVC]
+        return [discoveryVC, followVC, nearByVC]
     }
 
 }
