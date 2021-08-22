@@ -18,7 +18,7 @@ class NearByVC: UIViewController, IndicatorInfoProvider {
     
 
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
-        return IndicatorInfo(title: "NearBy")
+        return IndicatorInfo(title: NSLocalizedString("NearBy", comment: "NearBy tab on the top of the Home page."))
     }
 
 }

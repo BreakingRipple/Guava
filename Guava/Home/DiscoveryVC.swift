@@ -34,7 +34,7 @@ class DiscoveryVC: ButtonBarPagerTabStripViewController, IndicatorInfoProvider {
     
 
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
-        return IndicatorInfo(title: "Discovery")
+        return IndicatorInfo(title: NSLocalizedString("Discovery", comment: "Discovery tab on the top of the Home page."))
     }
     
     override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {

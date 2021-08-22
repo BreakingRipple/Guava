@@ -21,6 +21,8 @@
 		2EC348DF26D1120F00CAA637 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348DE26D1120F00CAA637 /* Constants.swift */; };
 		2EC348E226D2242F00CAA637 /* WaterfallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348E126D2242F00CAA637 /* WaterfallVC.swift */; };
 		2EC348E426D22C1000CAA637 /* WaterfallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348E326D22C1000CAA637 /* WaterfallCell.swift */; };
+		2EC348F626D2991200CAA637 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2EC348F426D2991200CAA637 /* Localizable.strings */; };
+		2EC348FA26D29DA200CAA637 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2EC348FC26D29DA200CAA637 /* InfoPlist.strings */; };
 		6BBCA0A7FAC2BEB1B5843C81 /* Pods_Guava.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88842F55AA7CA6BB058A467 /* Pods_Guava.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +44,11 @@
 		2EC348DE26D1120F00CAA637 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2EC348E126D2242F00CAA637 /* WaterfallVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallVC.swift; sourceTree = "<group>"; };
 		2EC348E326D22C1000CAA637 /* WaterfallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallCell.swift; sourceTree = "<group>"; };
+		2EC348E726D259BC00CAA637 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		2EC348E826D259BD00CAA637 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		2EC348F526D2991200CAA637 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		2EC348F726D29D5300CAA637 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2EC348FB26D29DA200CAA637 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		D83220223EB8DECDFA4C3E95 /* Pods-Guava.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guava.debug.xcconfig"; path = "Target Support Files/Pods-Guava/Pods-Guava.debug.xcconfig"; sourceTree = "<group>"; };
 		F88842F55AA7CA6BB058A467 /* Pods_Guava.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Guava.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -61,6 +68,7 @@
 		2E17C5A026CF956200AE335F = {
 			isa = PBXGroup;
 			children = (
+				2E17C5C326D0938D00AE335F /* Diary.MD */,
 				2E17C5AB26CF956200AE335F /* Guava */,
 				2E17C5AA26CF956200AE335F /* Products */,
 				DA7BFB8CB5278BC6E2EB5BBE /* Pods */,
@@ -82,15 +90,14 @@
 				2E17C5AC26CF956200AE335F /* AppDelegate.swift */,
 				2E17C5AE26CF956200AE335F /* SceneDelegate.swift */,
 				2E17C5B226CF956200AE335F /* Main.storyboard */,
-				2EC348E126D2242F00CAA637 /* WaterfallVC.swift */,
-				2EC348E326D22C1000CAA637 /* WaterfallCell.swift */,
-				2EC348DE26D1120F00CAA637 /* Constants.swift */,
 				2EC348E026D1139200CAA637 /* Home */,
+				2EC348E526D2560700CAA637 /* Waterfall */,
+				2EC348E626D2561300CAA637 /* Common */,
 				2E17C5B826CF956400AE335F /* Assets.xcassets */,
+				2EC348FD26D2A1A200CAA637 /* Resources */,
 				2E17C5BA26CF956400AE335F /* LaunchScreen.storyboard */,
 				2E17C5BD26CF956400AE335F /* Info.plist */,
 				2E17C5B526CF956200AE335F /* Guava.xcdatamodeld */,
-				2E17C5C326D0938D00AE335F /* Diary.MD */,
 			);
 			path = Guava;
 			sourceTree = "<group>";
@@ -104,6 +111,32 @@
 				2EC348DC26D10A3C00CAA637 /* NearByVC.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		2EC348E526D2560700CAA637 /* Waterfall */ = {
+			isa = PBXGroup;
+			children = (
+				2EC348E126D2242F00CAA637 /* WaterfallVC.swift */,
+				2EC348E326D22C1000CAA637 /* WaterfallCell.swift */,
+			);
+			path = Waterfall;
+			sourceTree = "<group>";
+		};
+		2EC348E626D2561300CAA637 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2EC348DE26D1120F00CAA637 /* Constants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		2EC348FD26D2A1A200CAA637 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2EC348F426D2991200CAA637 /* Localizable.strings */,
+				2EC348FC26D29DA200CAA637 /* InfoPlist.strings */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		43E32712890A0F449EDC7CCD /* Frameworks */ = {
@@ -166,6 +199,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 2E17C5A026CF956200AE335F;
 			productRefGroup = 2E17C5AA26CF956200AE335F /* Products */;
@@ -182,6 +216,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EC348F626D2991200CAA637 /* Localizable.strings in Resources */,
+				2EC348FA26D29DA200CAA637 /* InfoPlist.strings in Resources */,
 				2E17C5C426D0938D00AE335F /* Diary.MD in Resources */,
 				2E17C5BC26CF956400AE335F /* LaunchScreen.storyboard in Resources */,
 				2E17C5B926CF956400AE335F /* Assets.xcassets in Resources */,
@@ -258,6 +294,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				2E17C5B326CF956200AE335F /* Base */,
+				2EC348E726D259BC00CAA637 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -266,8 +303,26 @@
 			isa = PBXVariantGroup;
 			children = (
 				2E17C5BB26CF956400AE335F /* Base */,
+				2EC348E826D259BD00CAA637 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2EC348F426D2991200CAA637 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EC348F526D2991200CAA637 /* zh-Hans */,
+				2EC348F726D29D5300CAA637 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		2EC348FC26D29DA200CAA637 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EC348FB26D29DA200CAA637 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -277,6 +332,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -338,6 +394,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
