@@ -11,6 +11,9 @@
         pod install     //Analyzing dependencies & Downloading dependencies
             optional: pod repo update       // update the index file of cocoapods
     
-3. use XLPagerTabStrip
-        ButtonBar style
+3. use XLPagerTabStrip to develop TOP tab bar
+        https://github.com/xmartlabs/XLPagerTabStrip
+        
+4. WaterfallLayout - customized layout of Collectionview
+        https://github.com/chiahsien/CHTCollectionViewWaterfallLayout
         

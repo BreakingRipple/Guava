@@ -21,7 +21,6 @@ class HomeVC: ButtonBarPagerTabStripViewController {
         settings.style.selectedBarHeight = 2
         
         settings.style.buttonBarItemBackgroundColor = .clear
-        settings.style.buttonBarItemTitleColor = .label
         settings.style.buttonBarItemFont = .boldSystemFont(ofSize: 14)
         settings.style.buttonBarItemLeftRightMargin = 0
         
@@ -29,7 +28,7 @@ class HomeVC: ButtonBarPagerTabStripViewController {
         super.viewDidLoad()
         
         containerView.bounces = false
-        
+    
         changeCurrentIndexProgressive = { (oldCell: ButtonBarViewCell?, newCell: ButtonBarViewCell?, progressPercentage: CGFloat, changeCurrentIndex: Bool, animated: Bool) -> Void in
             guard changeCurrentIndex == true else { return }
 
@@ -37,9 +36,6 @@ class HomeVC: ButtonBarPagerTabStripViewController {
             newCell?.label.textColor = .label
 
         }
-       
-        
-
         
     }
     

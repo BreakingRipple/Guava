@@ -19,6 +19,8 @@
 		2EC348DB26D10A0500CAA637 /* DiscoveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348DA26D10A0500CAA637 /* DiscoveryVC.swift */; };
 		2EC348DD26D10A3C00CAA637 /* NearByVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348DC26D10A3C00CAA637 /* NearByVC.swift */; };
 		2EC348DF26D1120F00CAA637 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348DE26D1120F00CAA637 /* Constants.swift */; };
+		2EC348E226D2242F00CAA637 /* WaterfallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348E126D2242F00CAA637 /* WaterfallVC.swift */; };
+		2EC348E426D22C1000CAA637 /* WaterfallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348E326D22C1000CAA637 /* WaterfallCell.swift */; };
 		6BBCA0A7FAC2BEB1B5843C81 /* Pods_Guava.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88842F55AA7CA6BB058A467 /* Pods_Guava.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +40,8 @@
 		2EC348DA26D10A0500CAA637 /* DiscoveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryVC.swift; sourceTree = "<group>"; };
 		2EC348DC26D10A3C00CAA637 /* NearByVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByVC.swift; sourceTree = "<group>"; };
 		2EC348DE26D1120F00CAA637 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2EC348E126D2242F00CAA637 /* WaterfallVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallVC.swift; sourceTree = "<group>"; };
+		2EC348E326D22C1000CAA637 /* WaterfallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallCell.swift; sourceTree = "<group>"; };
 		D83220223EB8DECDFA4C3E95 /* Pods-Guava.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guava.debug.xcconfig"; path = "Target Support Files/Pods-Guava/Pods-Guava.debug.xcconfig"; sourceTree = "<group>"; };
 		F88842F55AA7CA6BB058A467 /* Pods_Guava.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Guava.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -78,6 +82,8 @@
 				2E17C5AC26CF956200AE335F /* AppDelegate.swift */,
 				2E17C5AE26CF956200AE335F /* SceneDelegate.swift */,
 				2E17C5B226CF956200AE335F /* Main.storyboard */,
+				2EC348E126D2242F00CAA637 /* WaterfallVC.swift */,
+				2EC348E326D22C1000CAA637 /* WaterfallCell.swift */,
 				2EC348DE26D1120F00CAA637 /* Constants.swift */,
 				2EC348E026D1139200CAA637 /* Home */,
 				2E17C5B826CF956400AE335F /* Assets.xcassets */,
@@ -233,6 +239,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EC348DD26D10A3C00CAA637 /* NearByVC.swift in Sources */,
+				2EC348E226D2242F00CAA637 /* WaterfallVC.swift in Sources */,
+				2EC348E426D22C1000CAA637 /* WaterfallCell.swift in Sources */,
 				2E17C5AD26CF956200AE335F /* AppDelegate.swift in Sources */,
 				2EC348D526D0D75700CAA637 /* HomeVC.swift in Sources */,
 				2EC348D926D109D500CAA637 /* FollowVC.swift in Sources */,
