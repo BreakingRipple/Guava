@@ -23,6 +23,9 @@
 		2EC348E426D22C1000CAA637 /* WaterfallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348E326D22C1000CAA637 /* WaterfallCell.swift */; };
 		2EC348F626D2991200CAA637 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2EC348F426D2991200CAA637 /* Localizable.strings */; };
 		2EC348FA26D29DA200CAA637 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2EC348FC26D29DA200CAA637 /* InfoPlist.strings */; };
+		2EC348FF26D2AF6700CAA637 /* TabBarC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348FE26D2AF6700CAA637 /* TabBarC.swift */; };
+		2EC3490126D2B19200CAA637 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3490026D2B19200CAA637 /* PostVC.swift */; };
+		2EC3490326D3723E00CAA637 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3490226D3723E00CAA637 /* Extensions.swift */; };
 		6BBCA0A7FAC2BEB1B5843C81 /* Pods_Guava.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88842F55AA7CA6BB058A467 /* Pods_Guava.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +52,9 @@
 		2EC348F526D2991200CAA637 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		2EC348F726D29D5300CAA637 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2EC348FB26D29DA200CAA637 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		2EC348FE26D2AF6700CAA637 /* TabBarC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarC.swift; sourceTree = "<group>"; };
+		2EC3490026D2B19200CAA637 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
+		2EC3490226D3723E00CAA637 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D83220223EB8DECDFA4C3E95 /* Pods-Guava.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guava.debug.xcconfig"; path = "Target Support Files/Pods-Guava/Pods-Guava.debug.xcconfig"; sourceTree = "<group>"; };
 		F88842F55AA7CA6BB058A467 /* Pods_Guava.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Guava.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -90,12 +96,14 @@
 				2E17C5AC26CF956200AE335F /* AppDelegate.swift */,
 				2E17C5AE26CF956200AE335F /* SceneDelegate.swift */,
 				2E17C5B226CF956200AE335F /* Main.storyboard */,
+				2EC348FE26D2AF6700CAA637 /* TabBarC.swift */,
 				2EC348E026D1139200CAA637 /* Home */,
 				2EC348E526D2560700CAA637 /* Waterfall */,
 				2EC348E626D2561300CAA637 /* Common */,
 				2E17C5B826CF956400AE335F /* Assets.xcassets */,
 				2EC348FD26D2A1A200CAA637 /* Resources */,
 				2E17C5BA26CF956400AE335F /* LaunchScreen.storyboard */,
+				2EC3490426D38B9D00CAA637 /* Demos+Placeholder */,
 				2E17C5BD26CF956400AE335F /* Info.plist */,
 				2E17C5B526CF956200AE335F /* Guava.xcdatamodeld */,
 			);
@@ -126,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				2EC348DE26D1120F00CAA637 /* Constants.swift */,
+				2EC3490226D3723E00CAA637 /* Extensions.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -137,6 +146,14 @@
 				2EC348FC26D29DA200CAA637 /* InfoPlist.strings */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		2EC3490426D38B9D00CAA637 /* Demos+Placeholder */ = {
+			isa = PBXGroup;
+			children = (
+				2EC3490026D2B19200CAA637 /* PostVC.swift */,
+			);
+			path = "Demos+Placeholder";
 			sourceTree = "<group>";
 		};
 		43E32712890A0F449EDC7CCD /* Frameworks */ = {
@@ -275,11 +292,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EC348DD26D10A3C00CAA637 /* NearByVC.swift in Sources */,
+				2EC348FF26D2AF6700CAA637 /* TabBarC.swift in Sources */,
 				2EC348E226D2242F00CAA637 /* WaterfallVC.swift in Sources */,
 				2EC348E426D22C1000CAA637 /* WaterfallCell.swift in Sources */,
 				2E17C5AD26CF956200AE335F /* AppDelegate.swift in Sources */,
 				2EC348D526D0D75700CAA637 /* HomeVC.swift in Sources */,
+				2EC3490126D2B19200CAA637 /* PostVC.swift in Sources */,
 				2EC348D926D109D500CAA637 /* FollowVC.swift in Sources */,
+				2EC3490326D3723E00CAA637 /* Extensions.swift in Sources */,
 				2E17C5B726CF956200AE335F /* Guava.xcdatamodeld in Sources */,
 				2E17C5AF26CF956200AE335F /* SceneDelegate.swift in Sources */,
 				2EC348DB26D10A0500CAA637 /* DiscoveryVC.swift in Sources */,

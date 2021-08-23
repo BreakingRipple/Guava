@@ -8,5 +8,5 @@ target 'Guava' do
   # Pods for Guava
   pod 'XLPagerTabStrip', '~> 9.0'
   pod 'CHTCollectionViewWaterfallLayout/Swift'
-
+  pod 'YPImagePicker'
 end

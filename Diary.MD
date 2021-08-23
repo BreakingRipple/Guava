@@ -22,4 +22,6 @@
         3.[file:automatic] delete file "Localizable.strings" --> on terminal: cd /Users/Savage/Documents/Swift/UIKit/SwiftWithLebus/实战项目-模拟小红书/石榴记/Guava/Guava --> genstrings -o zh-Hans.lproj *.swift --> genstrings -o zh-Hans.lproj Home/*.swift
         4.[display name] Guava --> create file "InfoPlist.strings" --> right section, Localization --> add language --> add translation entry.
         
+### ImagePicker
+        https://github.com/Yummypets/YPImagePicker
             

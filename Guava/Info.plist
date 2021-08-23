@@ -2,6 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>you can save your new photo into your library after allowing it</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>you can record your voice or video after allowing it</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>input images from photo library</string>
+	<key>NSCameraUsageDescription</key>
+	<string>open camera to make photos or videos</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
