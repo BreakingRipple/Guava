@@ -37,6 +37,7 @@ class TabBarC: UITabBarController, UITabBarControllerDelegate {
             config.hidesBottomBar = false
             config.hidesCancelButton = false
             config.preferredStatusBarStyle = UIStatusBarStyle.default
+            config.maxCameraZoomFactor = kMaxCameraZoomFactor
             
             //rules:
             //1. It is not allowed to mix photo with video, while multiple videos will be merge together.
@@ -46,7 +47,7 @@ class TabBarC: UITabBarController, UITabBarControllerDelegate {
             //MARK: Library
             config.library.defaultMultipleSelection = true
             config.library.maxNumberOfItems = kMaxPhotoCount
-            config.library.spacingBetweenItems = 2
+            config.library.spacingBetweenItems = kSpacingBetweenItems
             
             //MARK: Video
             
@@ -59,14 +60,15 @@ class TabBarC: UITabBarController, UITabBarControllerDelegate {
                     print("user clicks the Cancel button")
                 }
                 
-                
-                if let photo = items.singlePhoto {
-                    print(photo.fromCamera) // Image source (camera or library)
-                    print(photo.image) // Final image selected by the user
-                    print(photo.originalImage) // original image selected by the user, unfiltered
-//                    print(photo.modifiedImage) // Transformed image, can be nil
-//                    print(photo.exifMeta) // Print exif meta data of original image.-
+                for item in items {
+                    switch item {
+                    case let .photo(photo):
+                        print(photo)
+                    case .video(let video):
+                        print(video)
+                    }
                 }
+                
                 picker.dismiss(animated: true, completion: nil)
             }
             present(picker, animated: true, completion: nil)

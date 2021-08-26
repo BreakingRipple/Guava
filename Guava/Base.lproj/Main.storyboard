@@ -26,6 +26,48 @@
             </objects>
             <point key="canvasLocation" x="1674" y="421"/>
         </scene>
+        <!--Note EditVC-->
+        <scene sceneID="h2m-84-PHu">
+            <objects>
+                <viewController storyboardIdentifier="NoteEditVCID" id="ElY-jg-2jg" customClass="NoteEditVC" customModule="Guava" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bxX-mY-fuY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3G4-aN-NKQ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="whK-Hr-lcn">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="whK-Hr-lcn" firstAttribute="bottom" secondItem="py8-cw-l9o" secondAttribute="bottom" id="0NR-pS-pc9"/>
+                                    <constraint firstItem="whK-Hr-lcn" firstAttribute="height" secondItem="c7Q-98-B4b" secondAttribute="height" id="ENE-Uo-DW4"/>
+                                    <constraint firstItem="whK-Hr-lcn" firstAttribute="top" secondItem="py8-cw-l9o" secondAttribute="top" id="LbK-Ub-fbn"/>
+                                    <constraint firstItem="whK-Hr-lcn" firstAttribute="width" secondItem="c7Q-98-B4b" secondAttribute="width" id="fiY-7E-1cq"/>
+                                    <constraint firstItem="whK-Hr-lcn" firstAttribute="trailing" secondItem="py8-cw-l9o" secondAttribute="trailing" id="fw3-4d-BV3"/>
+                                    <constraint firstItem="whK-Hr-lcn" firstAttribute="leading" secondItem="py8-cw-l9o" secondAttribute="leading" id="xRO-69-5tm"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="py8-cw-l9o"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="c7Q-98-B4b"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sj6-yd-X3R"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="3G4-aN-NKQ" secondAttribute="bottom" id="3qo-50-b5d"/>
+                            <constraint firstItem="3G4-aN-NKQ" firstAttribute="trailing" secondItem="sj6-yd-X3R" secondAttribute="trailing" id="JUM-Uk-A7N"/>
+                            <constraint firstItem="3G4-aN-NKQ" firstAttribute="top" secondItem="sj6-yd-X3R" secondAttribute="top" id="XE1-Xf-qOW"/>
+                            <constraint firstItem="3G4-aN-NKQ" firstAttribute="leading" secondItem="sj6-yd-X3R" secondAttribute="leading" id="q1s-Cg-jw5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zA1-Lc-QOv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2476.811594202899" y="420.53571428571428"/>
+        </scene>
         <!--Message-->
         <scene sceneID="THU-Dc-9f7">
             <objects>

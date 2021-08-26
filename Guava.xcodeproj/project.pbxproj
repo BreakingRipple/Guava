@@ -26,6 +26,7 @@
 		2EC348FF26D2AF6700CAA637 /* TabBarC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348FE26D2AF6700CAA637 /* TabBarC.swift */; };
 		2EC3490126D2B19200CAA637 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3490026D2B19200CAA637 /* PostVC.swift */; };
 		2EC3490326D3723E00CAA637 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3490226D3723E00CAA637 /* Extensions.swift */; };
+		2EC3490826D6863E00CAA637 /* NoteEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3490726D6863D00CAA637 /* NoteEditVC.swift */; };
 		6BBCA0A7FAC2BEB1B5843C81 /* Pods_Guava.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88842F55AA7CA6BB058A467 /* Pods_Guava.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,9 @@
 		2EC348FE26D2AF6700CAA637 /* TabBarC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarC.swift; sourceTree = "<group>"; };
 		2EC3490026D2B19200CAA637 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
 		2EC3490226D3723E00CAA637 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		2EC3490526D3D8A400CAA637 /* Clousures.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Clousures.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		2EC3490626D514BF00CAA637 /* Value+Reference.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Value+Reference.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		2EC3490726D6863D00CAA637 /* NoteEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEditVC.swift; sourceTree = "<group>"; };
 		D83220223EB8DECDFA4C3E95 /* Pods-Guava.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guava.debug.xcconfig"; path = "Target Support Files/Pods-Guava/Pods-Guava.debug.xcconfig"; sourceTree = "<group>"; };
 		F88842F55AA7CA6BB058A467 /* Pods_Guava.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Guava.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -97,6 +101,7 @@
 				2E17C5AE26CF956200AE335F /* SceneDelegate.swift */,
 				2E17C5B226CF956200AE335F /* Main.storyboard */,
 				2EC348FE26D2AF6700CAA637 /* TabBarC.swift */,
+				2EC3490726D6863D00CAA637 /* NoteEditVC.swift */,
 				2EC348E026D1139200CAA637 /* Home */,
 				2EC348E526D2560700CAA637 /* Waterfall */,
 				2EC348E626D2561300CAA637 /* Common */,
@@ -152,6 +157,8 @@
 			isa = PBXGroup;
 			children = (
 				2EC3490026D2B19200CAA637 /* PostVC.swift */,
+				2EC3490626D514BF00CAA637 /* Value+Reference.playground */,
+				2EC3490526D3D8A400CAA637 /* Clousures.playground */,
 			);
 			path = "Demos+Placeholder";
 			sourceTree = "<group>";
@@ -295,6 +302,7 @@
 				2EC348FF26D2AF6700CAA637 /* TabBarC.swift in Sources */,
 				2EC348E226D2242F00CAA637 /* WaterfallVC.swift in Sources */,
 				2EC348E426D22C1000CAA637 /* WaterfallCell.swift in Sources */,
+				2EC3490826D6863E00CAA637 /* NoteEditVC.swift in Sources */,
 				2E17C5AD26CF956200AE335F /* AppDelegate.swift in Sources */,
 				2EC348D526D0D75700CAA637 /* HomeVC.swift in Sources */,
 				2EC3490126D2B19200CAA637 /* PostVC.swift in Sources */,

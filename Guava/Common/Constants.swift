@@ -12,14 +12,18 @@ let kFollowVCID = "FollowVCID"
 let kNearByVCID = "NearByVCID"
 let kDiscoveryVCID = "DiscoveryVCID"
 let kWaterfallVCID = "WaterfallVCID"
+let kNoteEditVCID = "NoteEditVCID"
 
 
 //MARK: CellID
 let kWaterfallCellID = "WaterfallCellID"
 
 
+// MARK: waterfall
 let kWaterfallPadding: CGFloat = 4
-
-// MARK: Rules
 let kChannels = ["For you", "Video", "Live", "Gaming", "Travel", "Fashion", "Vlog", "Photography", "Movies"]
-let kMaxPhotoCount = 9 
+
+//YPImagePicker
+let kMaxPhotoCount = 9
+let kMaxCameraZoomFactor: CGFloat = 5
+let kSpacingBetweenItems: CGFloat = 2
