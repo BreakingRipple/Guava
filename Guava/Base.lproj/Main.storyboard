@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -39,7 +40,87 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="whK-Hr-lcn">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
+                                        <subviews>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Zuf-2M-Kcz">
+                                                <rect key="frame" x="16" y="16" width="382" height="90"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="90" id="k9G-lx-kfK"/>
+                                                </constraints>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mOw-OG-CVQ">
+                                                    <size key="itemSize" width="90" height="90"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="90" height="90"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="8" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCellID" id="P6e-lf-z9K" customClass="PhotoCell" customModule="Guava" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="uey-7O-ewN">
+                                                            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="21" translatesAutoresizingMaskIntoConstraints="NO" id="Fk8-9y-7kL">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="Fk8-9y-7kL" secondAttribute="trailing" id="XJJ-qf-ohE"/>
+                                                                <constraint firstAttribute="bottom" secondItem="Fk8-9y-7kL" secondAttribute="bottom" id="Xn3-0d-Kxm"/>
+                                                                <constraint firstItem="Fk8-9y-7kL" firstAttribute="leading" secondItem="uey-7O-ewN" secondAttribute="leading" id="l2Y-t7-KfJ"/>
+                                                                <constraint firstItem="Fk8-9y-7kL" firstAttribute="top" secondItem="uey-7O-ewN" secondAttribute="top" id="sTw-L6-ZzO"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                                    <real key="value" value="10"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </collectionViewCellContentView>
+                                                        <connections>
+                                                            <outlet property="imageView" destination="Fk8-9y-7kL" id="uNG-tN-Cwe"/>
+                                                        </connections>
+                                                    </collectionViewCell>
+                                                </cells>
+                                                <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="PhotoFooterID" id="gIU-OX-sfz" customClass="PhotoFooter" customModule="Guava" customModuleProvider="target">
+                                                    <rect key="frame" x="98" y="0.0" width="90" height="90"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2z-Sy-QdT">
+                                                            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                                            <color key="tintColor" systemColor="tertiaryLabelColor"/>
+                                                            <state key="normal">
+                                                                <imageReference key="image" image="plus" catalog="system" symbolScale="large"/>
+                                                            </state>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                                    <real key="value" value="10"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="j2z-Sy-QdT" secondAttribute="trailing" id="3yT-dp-Oaz"/>
+                                                        <constraint firstItem="j2z-Sy-QdT" firstAttribute="leading" secondItem="gIU-OX-sfz" secondAttribute="leading" id="6XB-uV-a30"/>
+                                                        <constraint firstItem="j2z-Sy-QdT" firstAttribute="top" secondItem="gIU-OX-sfz" secondAttribute="top" id="9fB-MV-aKR"/>
+                                                        <constraint firstAttribute="bottom" secondItem="j2z-Sy-QdT" secondAttribute="bottom" id="p5K-Zv-zmH"/>
+                                                    </constraints>
+                                                    <connections>
+                                                        <outlet property="addPhotoBtn" destination="j2z-Sy-QdT" id="kpf-KM-ZTN"/>
+                                                    </connections>
+                                                </collectionReusableView>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="ElY-jg-2jg" id="9bY-Vk-NvX"/>
+                                                    <outlet property="delegate" destination="ElY-jg-2jg" id="5xC-Gz-CxD"/>
+                                                </connections>
+                                            </collectionView>
+                                        </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Zuf-2M-Kcz" secondAttribute="trailing" constant="16" id="4ea-kF-vNv"/>
+                                            <constraint firstItem="Zuf-2M-Kcz" firstAttribute="leading" secondItem="whK-Hr-lcn" secondAttribute="leading" constant="16" id="Opw-Kw-GZe"/>
+                                            <constraint firstItem="Zuf-2M-Kcz" firstAttribute="top" secondItem="whK-Hr-lcn" secondAttribute="top" constant="16" id="fqk-5q-KbB"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -63,10 +144,13 @@
                             <constraint firstItem="3G4-aN-NKQ" firstAttribute="leading" secondItem="sj6-yd-X3R" secondAttribute="leading" id="q1s-Cg-jw5"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="photoCollectionView" destination="Zuf-2M-Kcz" id="aBr-Uf-0P4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zA1-Lc-QOv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2476.811594202899" y="420.53571428571428"/>
+            <point key="canvasLocation" x="2578" y="421"/>
         </scene>
         <!--Message-->
         <scene sceneID="THU-Dc-9f7">
@@ -325,16 +409,21 @@
         </scene>
     </scenes>
     <resources>
+        <image name="21" width="1080" height="1763"/>
         <image name="cart.fill" catalog="system" width="128" height="102"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="message.fill" catalog="system" width="128" height="113"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <image name="plus.rectangle.fill" catalog="system" width="128" height="93"/>
         <namedColor name="main">
             <color red="0.50199997425079346" green="0.69800001382827759" blue="0.33700001239776611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

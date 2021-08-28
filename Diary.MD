@@ -24,4 +24,14 @@
         
 ### ImagePicker
         https://github.com/Yummypets/YPImagePicker
-            
+        
+### MBProgressHUD  (using Objective-C library in our Swift project)
+        https://github.com/jdg/MBProgressHUD
+        1. Add a pod entry for MBProgressHUD to your Podfile pod 'MBProgressHUD', '~> 1.2.0'
+        2. Install the pod(s) by running pod install.
+        3. [manually create bridging header file] create new file "Guava-Bridging-Header.h" --> Guava  -->  TARGETS  -->  Objective-C Briding Header --> add address --> open fiel "Guava-Bridging-Header.h" --> add: #import "MBProgressHUD.h"
+        4. OR [automatically create bridging header file]
+
+### SKPhotoBrowser
+        https://github.com/suzuki-0000/SKPhotoBrowser
+        

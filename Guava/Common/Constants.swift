@@ -17,7 +17,8 @@ let kNoteEditVCID = "NoteEditVCID"
 
 //MARK: CellID
 let kWaterfallCellID = "WaterfallCellID"
-
+let kPhotoCellID = "PhotoCellID"
+let kPhotoFooterID = "PhotoFooterID"
 
 // MARK: waterfall
 let kWaterfallPadding: CGFloat = 4
