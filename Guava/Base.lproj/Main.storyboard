@@ -112,6 +112,8 @@
                                                 <connections>
                                                     <outlet property="dataSource" destination="ElY-jg-2jg" id="9bY-Vk-NvX"/>
                                                     <outlet property="delegate" destination="ElY-jg-2jg" id="5xC-Gz-CxD"/>
+                                                    <outlet property="dragDelegate" destination="ElY-jg-2jg" id="YRQ-69-4R0"/>
+                                                    <outlet property="dropDelegate" destination="ElY-jg-2jg" id="JKX-ac-doh"/>
                                                 </connections>
                                             </collectionView>
                                         </subviews>

@@ -29,6 +29,8 @@
 		2EC3490826D6863E00CAA637 /* NoteEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3490726D6863D00CAA637 /* NoteEditVC.swift */; };
 		2EC3490A26D7AE4600CAA637 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3490926D7AE4600CAA637 /* PhotoCell.swift */; };
 		2EC3490D26D9040800CAA637 /* PhotoFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3490C26D9040800CAA637 /* PhotoFooter.swift */; };
+		2EC3491126DA7B8000CAA637 /* testVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2EC3491026DA7A1800CAA637 /* testVideo.mp4 */; };
+		2EC3491326DA837B00CAA637 /* NoteEditVC-DragDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3491226DA837B00CAA637 /* NoteEditVC-DragDrop.swift */; };
 		6BBCA0A7FAC2BEB1B5843C81 /* Pods_Guava.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88842F55AA7CA6BB058A467 /* Pods_Guava.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +67,8 @@
 		2EC3490B26D7EB6300CAA637 /* CreateCollectionViewByCode.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CreateCollectionViewByCode.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2EC3490C26D9040800CAA637 /* PhotoFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFooter.swift; sourceTree = "<group>"; };
 		2EC3490F26DA146600CAA637 /* Guava-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Guava-Bridging-Header.h"; sourceTree = "<group>"; };
+		2EC3491026DA7A1800CAA637 /* testVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = testVideo.mp4; sourceTree = "<group>"; };
+		2EC3491226DA837B00CAA637 /* NoteEditVC-DragDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-DragDrop.swift"; sourceTree = "<group>"; };
 		D83220223EB8DECDFA4C3E95 /* Pods-Guava.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guava.debug.xcconfig"; path = "Target Support Files/Pods-Guava/Pods-Guava.debug.xcconfig"; sourceTree = "<group>"; };
 		F88842F55AA7CA6BB058A467 /* Pods_Guava.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Guava.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -118,6 +122,7 @@
 				2E17C5BD26CF956400AE335F /* Info.plist */,
 				2E17C5B526CF956200AE335F /* Guava.xcdatamodeld */,
 				2EC3490F26DA146600CAA637 /* Guava-Bridging-Header.h */,
+				2EC3491026DA7A1800CAA637 /* testVideo.mp4 */,
 			);
 			path = Guava;
 			sourceTree = "<group>";
@@ -175,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				2EC3490726D6863D00CAA637 /* NoteEditVC.swift */,
+				2EC3491226DA837B00CAA637 /* NoteEditVC-DragDrop.swift */,
 				2EC3490926D7AE4600CAA637 /* PhotoCell.swift */,
 				2EC3490C26D9040800CAA637 /* PhotoFooter.swift */,
 			);
@@ -261,6 +267,7 @@
 				2EC348F626D2991200CAA637 /* Localizable.strings in Resources */,
 				2EC348FA26D29DA200CAA637 /* InfoPlist.strings in Resources */,
 				2E17C5C426D0938D00AE335F /* Diary.MD in Resources */,
+				2EC3491126DA7B8000CAA637 /* testVideo.mp4 in Resources */,
 				2E17C5BC26CF956400AE335F /* LaunchScreen.storyboard in Resources */,
 				2E17C5B926CF956400AE335F /* Assets.xcassets in Resources */,
 				2E17C5B426CF956200AE335F /* Main.storyboard in Resources */,
@@ -316,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EC3491326DA837B00CAA637 /* NoteEditVC-DragDrop.swift in Sources */,
 				2EC348DD26D10A3C00CAA637 /* NearByVC.swift in Sources */,
 				2EC3490A26D7AE4600CAA637 /* PhotoCell.swift in Sources */,
 				2EC348FF26D2AF6700CAA637 /* TabBarC.swift in Sources */,
