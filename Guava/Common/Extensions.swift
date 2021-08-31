@@ -7,6 +7,11 @@
 
 import UIKit
 
+
+extension UITextField{
+    var unwrapperText: String{ text ?? ""}
+}
+
 extension UIView{
     @IBInspectable
     var radius: CGFloat{
@@ -34,6 +39,15 @@ extension UIViewController{
         hud.detailsLabel.text = subTitle
         hud.hide(animated: true, afterDelay: 2)
     }
+    
+    func hideKeyboardWhenTappedAround(){
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    @objc func dismissKeyboard(){
+        view.endEditing(true)
+    }
 }
 
 extension Bundle{
@@ -44,4 +58,12 @@ extension Bundle{
             return infoDictionary!["CFBundleDisplayName"] as! String
         }
     }
+    
+    static func loadView<T>(fromNib name: String, with type: T.Type) -> T{
+        if let view = Bundle.main.loadNibNamed(name, owner: nil, options: nil)?.first as? T{
+            return view
+        }
+        fatalError("failing to load \(type)")
+    }
+    
 }

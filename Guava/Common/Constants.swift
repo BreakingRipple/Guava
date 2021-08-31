@@ -28,3 +28,7 @@ let kChannels = ["For you", "Video", "Live", "Gaming", "Travel", "Fashion", "Vlo
 let kMaxPhotoCount = 9
 let kMaxCameraZoomFactor: CGFloat = 5
 let kSpacingBetweenItems: CGFloat = 2
+
+//Note
+let kMaxNoteTitleCount = 20
+let kMaxNoteTextCount = 1000

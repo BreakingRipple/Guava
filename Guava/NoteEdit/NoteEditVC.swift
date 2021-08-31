@@ -6,140 +6,110 @@
 //
 
 import UIKit
-import YPImagePicker
-import SKPhotoBrowser
-import AVKit
 
 class NoteEditVC: UIViewController {
     
     var photos = [
-        UIImage(named: "31")!, UIImage(named: "32")!
+        UIImage(named: "25")!, UIImage(named: "26")!
     ]
 //    var videoURL: URL = Bundle.main.url(forResource: "testVideo", withExtension: "mp4")!
     var videoURL: URL?
 
     @IBOutlet weak var photoCollectionView: UICollectionView!
+    @IBOutlet weak var titleTextField: UITextField!
+    @IBOutlet weak var titleCountLabel: UILabel!
+    @IBOutlet weak var textView: UITextView!
+    
     
     var photoCount: Int { photos.count }
     var isVideo: Bool { videoURL != nil }
+    var textViewIAView: TextViewIAView{ textView.inputAccessoryView as! TextViewIAView }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        photoCollectionView.dragInteractionEnabled = true
-        // Do any additional setup after loading the view.
+        config()
+
     }
 
+    @IBAction func TFEditBegin(_ sender: Any) {
+        titleCountLabel.isHidden = false
+    }
+    
+    @IBAction func TFEditEnd(_ sender: Any) {
+        titleCountLabel.isHidden = true
+    }
+    
+    @IBAction func TFEndOnExit(_ sender: Any) {
+    }
+    
+    @IBAction func TFEditChanged(_ sender: Any) {
+//        guard titleTextField.markedTextRange == nil else { return }
+//        if titleTextField.unwrapperText.count > kMaxNoteTitleCount{
+//            titleTextField.text = String(titleTextField.unwrapperText.prefix(kMaxNoteTitleCount))
+//            showTextHUD("no more than \(kMaxNoteTitleCount) characters")
+//            DispatchQueue.main.async {
+//                let end = self.titleTextField.endOfDocument
+//                self.titleTextField.selectedTextRange = self.titleTextField.textRange(from: end, to: end)
+//            }
+//        }
+        
+        titleCountLabel.text = "\(kMaxNoteTitleCount - titleTextField.unwrapperText.count)"
+    }
+    
+    // need to do draft
+    
 }
 
-extension NoteEditVC: UICollectionViewDataSource{
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        photoCount
+extension NoteEditVC: UITextViewDelegate{
+    func textViewDidChange(_ textView: UITextView) {
+        guard textView.markedTextRange == nil else { return }
+        textViewIAView.currentTextCount = textView.text.count
     }
+}
+
+extension NoteEditVC: UITextFieldDelegate{
+//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+//        textField.resignFirstResponder()
+//        return true
+//    }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kPhotoCellID, for: indexPath) as! PhotoCell
-        cell.imageView.image = photos[indexPath.item]
-//        cell.contentView.layer.cornerRadius = 10
-        return cell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-//        let photoFooter = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kPhotoFooterID, for: indexPath) as! PhotoFooter
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+//        // 1:
+//        print(range.location)
+//        print(string)
+//        if range.location >= kMaxNoteTitleCount || (textField.unwrapperText.count + string.count) > kMaxNoteTitleCount {
+//            return false
+//        }
 //
-//        return PhotoFooter
-        switch kind {
-        case UICollectionView.elementKindSectionFooter:
-            let photoFooter = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kPhotoFooterID, for: indexPath) as! PhotoFooter
-            photoFooter.addPhotoBtn.addTarget(self, action: #selector(addPhoto), for: .touchUpInside)
-            return photoFooter
-        default:
-            fatalError("collectionView error")
-//            return UICollectionReusableView()
+//        let isExceed = range.location >= kMaxNoteTitleCount || (textField.unwrapperText.count + string.count) > kMaxNoteTitleCount
+//
+//        if isExceed{
+//            showTextHUD("total character count is no more than \(kMaxNoteTitleCount)")
+//        }
+//        return !isExceed
+        
+        
+        // 2:
+        // get the current text, or use an empty string if that failed
+        let currentText = textField.text ?? ""
+
+        // attempt to read the range they are trying to change, or exit if we can't
+        guard let stringRange = Range(range, in: currentText) else { return false }
+
+        // add their new text to the existing text
+        let updatedText = currentText.replacingCharacters(in: stringRange, with: string)
+
+        // make sure the result is under 16 characters
+        if updatedText.count <= kMaxNoteTitleCount {
+            return true
+        } else {
+            showTextHUD("no more than \(kMaxNoteTitleCount) characters")
+            return false
         }
+        
+    }
     
-    }
 }
 
-extension NoteEditVC: UICollectionViewDelegate{
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        if isVideo {
-            let playerVC = AVPlayerViewController()
-            playerVC.player = AVPlayer(url: videoURL!)
-            present(playerVC, animated: true) {
-                playerVC.player?.play()
-            }
-            
-            
-        }else{
-            // 1. create SKPhoto Array from UIImage
-            var images = [SKPhoto]()
-            
-            for photo in photos{
-                images.append(SKPhoto.photoWithImage(photo))
-            }
-
-            // 2. create PhotoBrowser Instance, and present from your viewController.
-    //        let browser = SKPhotoBrowser(photos: images)
-    //        browser.initializePageIndex(indexPath.item)
-            let browser = SKPhotoBrowser(photos: images, initialPageIndex: indexPath.item)
-            browser.delegate = self
-            SKPhotoBrowserOptions.displayAction = false
-            SKPhotoBrowserOptions.displayDeleteButton = true
-            present(browser, animated: true)
-        }
-        
-
-    }
-}
-
-//MARK: SKPhotoBrowserDelegate
-extension NoteEditVC: SKPhotoBrowserDelegate{
-    func removePhoto(_ browser: SKPhotoBrowser, index: Int, reload: @escaping (() -> Void)) {
-        photos.remove(at: index)
-        photoCollectionView.reloadData()
-        reload()
-    }
-}
-
-
-// MARK: listening
-extension NoteEditVC{
-    @objc private func addPhoto(){
-        if photoCount < kMaxPhotoCount{
-            var config = YPImagePickerConfiguration()
-            
-            //MARK: General
-            config.albumName = Bundle.main.appName
-            config.screens = [.library]
-            
-            //MARK: Library
-            config.library.defaultMultipleSelection = true
-            config.library.maxNumberOfItems = kMaxPhotoCount - photoCount
-            config.library.spacingBetweenItems = kSpacingBetweenItems
-            
-            //MARK: Video
-            
-            //MARK: Gallery
-            config.gallery.hidesRemoveButton = false
-
-            let picker = YPImagePicker(configuration: config)
-            picker.didFinishPicking { [unowned picker] items, _ in
-                
-                for item in items {
-                    if case let .photo(photo) = item{
-                        self.photos.append(photo.image)
-                    }
-                }
-                
-                self.photoCollectionView.reloadData()
-                   
-                picker.dismiss(animated: true, completion: nil)
-            }
-            present(picker, animated: true, completion: nil)
-        }else{
-            
-            showTextHUD("You can't select more than \(kMaxPhotoCount) photos")
-        }
-    }
-}

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TextViewIAView" customModule="Guava" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="584" height="45"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eoy-77-bT1">
+                    <rect key="frame" x="0.0" y="0.0" width="584" height="1"/>
+                    <color key="backgroundColor" systemColor="quaternaryLabelColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="OFp-dP-KUZ"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kiv-JQ-3lX">
+                    <rect key="frame" x="521" y="1" width="47" height="44"/>
+                    <subviews>
+                        <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="stS-5o-zTD">
+                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFi-fx-hSH">
+                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" systemColor="systemRedColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/1000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhU-Cp-p52">
+                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" systemColor="tertiaryLabelColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Yv-Va-Ghi">
+                            <rect key="frame" x="0.0" y="0.0" width="47" height="44"/>
+                            <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Done">
+                                <color key="titleColor" name="blue"/>
+                            </state>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Eoy-77-bT1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1nB-4V-LJ8"/>
+                <constraint firstAttribute="trailing" secondItem="Eoy-77-bT1" secondAttribute="trailing" id="GVY-yw-9OK"/>
+                <constraint firstAttribute="bottom" secondItem="Kiv-JQ-3lX" secondAttribute="bottom" id="cax-B3-PhI"/>
+                <constraint firstItem="Kiv-JQ-3lX" firstAttribute="top" secondItem="Eoy-77-bT1" secondAttribute="bottom" id="ceb-Qw-5a2"/>
+                <constraint firstItem="Eoy-77-bT1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cf1-xf-5LI"/>
+                <constraint firstAttribute="trailing" secondItem="Kiv-JQ-3lX" secondAttribute="trailing" constant="16" id="sTb-bc-H0e"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="doneBtn" destination="2Yv-Va-Ghi" id="J0B-Fp-Wx2"/>
+                <outlet property="maxTextCountLabel" destination="qhU-Cp-p52" id="rXs-nK-oKx"/>
+                <outlet property="textCountLabel" destination="PFi-fx-hSH" id="28F-D2-JvT"/>
+                <outlet property="textCountStackView" destination="stS-5o-zTD" id="cOh-NL-G5y"/>
+            </connections>
+            <point key="canvasLocation" x="186.95652173913044" y="41.852678571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="blue">
+            <color red="0.37647058823529411" green="0.52941176470588236" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="quaternaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.17999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

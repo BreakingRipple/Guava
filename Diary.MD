@@ -36,3 +36,13 @@
         https://github.com/suzuki-0000/SKPhotoBrowser
 
 ### CollectionView Drag and Drop
+
+### TextField Label and Text View
+
+### Three ways to dismiss keyboard
+        1. dismiss on drag (keyboardDismissMode)
+        2. click the "finish" button on the user keyboard  (textField has a attibute called "text input traits" --> keyboard type; use the method in delegate: textFieldShouldReturn)  OR  @IBAction func TFEndOnExit(_ sender: Any) { }
+        3. click blank space to dismiss keyboard
+
+### UITextView + placeholder : KMPlaceholderTextView
+        1. https://github.com/MoZhouqi/KMPlaceholderTextView

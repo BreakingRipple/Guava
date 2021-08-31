@@ -31,6 +31,10 @@
 		2EC3490D26D9040800CAA637 /* PhotoFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3490C26D9040800CAA637 /* PhotoFooter.swift */; };
 		2EC3491126DA7B8000CAA637 /* testVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2EC3491026DA7A1800CAA637 /* testVideo.mp4 */; };
 		2EC3491326DA837B00CAA637 /* NoteEditVC-DragDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3491226DA837B00CAA637 /* NoteEditVC-DragDrop.swift */; };
+		2EC3491526DB69EC00CAA637 /* NoteEditVC-CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3491426DB69EC00CAA637 /* NoteEditVC-CollectionView.swift */; };
+		2EC3491726DCB1F000CAA637 /* NoteEditVC-Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3491626DCB1EF00CAA637 /* NoteEditVC-Config.swift */; };
+		2EC3491926DCC0F000CAA637 /* TextViewIAView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EC3491826DCC0F000CAA637 /* TextViewIAView.xib */; };
+		2EC3491B26DCC17900CAA637 /* TextViewIAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3491A26DCC17900CAA637 /* TextViewIAView.swift */; };
 		6BBCA0A7FAC2BEB1B5843C81 /* Pods_Guava.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88842F55AA7CA6BB058A467 /* Pods_Guava.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +73,10 @@
 		2EC3490F26DA146600CAA637 /* Guava-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Guava-Bridging-Header.h"; sourceTree = "<group>"; };
 		2EC3491026DA7A1800CAA637 /* testVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = testVideo.mp4; sourceTree = "<group>"; };
 		2EC3491226DA837B00CAA637 /* NoteEditVC-DragDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-DragDrop.swift"; sourceTree = "<group>"; };
+		2EC3491426DB69EC00CAA637 /* NoteEditVC-CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-CollectionView.swift"; sourceTree = "<group>"; };
+		2EC3491626DCB1EF00CAA637 /* NoteEditVC-Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-Config.swift"; sourceTree = "<group>"; };
+		2EC3491826DCC0F000CAA637 /* TextViewIAView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewIAView.xib; sourceTree = "<group>"; };
+		2EC3491A26DCC17900CAA637 /* TextViewIAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewIAView.swift; sourceTree = "<group>"; };
 		D83220223EB8DECDFA4C3E95 /* Pods-Guava.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guava.debug.xcconfig"; path = "Target Support Files/Pods-Guava/Pods-Guava.debug.xcconfig"; sourceTree = "<group>"; };
 		F88842F55AA7CA6BB058A467 /* Pods_Guava.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Guava.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -180,9 +188,13 @@
 			isa = PBXGroup;
 			children = (
 				2EC3490726D6863D00CAA637 /* NoteEditVC.swift */,
+				2EC3491626DCB1EF00CAA637 /* NoteEditVC-Config.swift */,
+				2EC3491426DB69EC00CAA637 /* NoteEditVC-CollectionView.swift */,
 				2EC3491226DA837B00CAA637 /* NoteEditVC-DragDrop.swift */,
 				2EC3490926D7AE4600CAA637 /* PhotoCell.swift */,
 				2EC3490C26D9040800CAA637 /* PhotoFooter.swift */,
+				2EC3491A26DCC17900CAA637 /* TextViewIAView.swift */,
+				2EC3491826DCC0F000CAA637 /* TextViewIAView.xib */,
 			);
 			path = NoteEdit;
 			sourceTree = "<group>";
@@ -264,6 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EC3491926DCC0F000CAA637 /* TextViewIAView.xib in Resources */,
 				2EC348F626D2991200CAA637 /* Localizable.strings in Resources */,
 				2EC348FA26D29DA200CAA637 /* InfoPlist.strings in Resources */,
 				2E17C5C426D0938D00AE335F /* Diary.MD in Resources */,
@@ -323,6 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EC3491B26DCC17900CAA637 /* TextViewIAView.swift in Sources */,
 				2EC3491326DA837B00CAA637 /* NoteEditVC-DragDrop.swift in Sources */,
 				2EC348DD26D10A3C00CAA637 /* NearByVC.swift in Sources */,
 				2EC3490A26D7AE4600CAA637 /* PhotoCell.swift in Sources */,
@@ -334,6 +348,8 @@
 				2E17C5AD26CF956200AE335F /* AppDelegate.swift in Sources */,
 				2EC348D526D0D75700CAA637 /* HomeVC.swift in Sources */,
 				2EC3490126D2B19200CAA637 /* PostVC.swift in Sources */,
+				2EC3491526DB69EC00CAA637 /* NoteEditVC-CollectionView.swift in Sources */,
+				2EC3491726DCB1F000CAA637 /* NoteEditVC-Config.swift in Sources */,
 				2EC348D926D109D500CAA637 /* FollowVC.swift in Sources */,
 				2EC3490326D3723E00CAA637 /* Extensions.swift in Sources */,
 				2E17C5B726CF956200AE335F /* Guava.xcdatamodeld in Sources */,
