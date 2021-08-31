@@ -24,7 +24,6 @@ class HomeVC: ButtonBarPagerTabStripViewController {
         settings.style.buttonBarItemFont = .boldSystemFont(ofSize: 14)
         settings.style.buttonBarItemLeftRightMargin = 0
         
-        
         super.viewDidLoad()
         
         containerView.bounces = false

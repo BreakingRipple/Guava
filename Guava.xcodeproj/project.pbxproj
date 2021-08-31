@@ -35,6 +35,9 @@
 		2EC3491726DCB1F000CAA637 /* NoteEditVC-Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3491626DCB1EF00CAA637 /* NoteEditVC-Config.swift */; };
 		2EC3491926DCC0F000CAA637 /* TextViewIAView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EC3491826DCC0F000CAA637 /* TextViewIAView.xib */; };
 		2EC3491B26DCC17900CAA637 /* TextViewIAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3491A26DCC17900CAA637 /* TextViewIAView.swift */; };
+		2EC3491D26DDC0A900CAA637 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3491C26DDC0A900CAA637 /* ChannelVC.swift */; };
+		2EC3491F26DDC23B00CAA637 /* ChannelTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3491E26DDC23B00CAA637 /* ChannelTableVC.swift */; };
+		2EC3492126DDCF0700CAA637 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3492026DDCF0700CAA637 /* Protocols.swift */; };
 		6BBCA0A7FAC2BEB1B5843C81 /* Pods_Guava.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88842F55AA7CA6BB058A467 /* Pods_Guava.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +80,9 @@
 		2EC3491626DCB1EF00CAA637 /* NoteEditVC-Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-Config.swift"; sourceTree = "<group>"; };
 		2EC3491826DCC0F000CAA637 /* TextViewIAView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewIAView.xib; sourceTree = "<group>"; };
 		2EC3491A26DCC17900CAA637 /* TextViewIAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewIAView.swift; sourceTree = "<group>"; };
+		2EC3491C26DDC0A900CAA637 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		2EC3491E26DDC23B00CAA637 /* ChannelTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelTableVC.swift; sourceTree = "<group>"; };
+		2EC3492026DDCF0700CAA637 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		D83220223EB8DECDFA4C3E95 /* Pods-Guava.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guava.debug.xcconfig"; path = "Target Support Files/Pods-Guava/Pods-Guava.debug.xcconfig"; sourceTree = "<group>"; };
 		F88842F55AA7CA6BB058A467 /* Pods_Guava.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Guava.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -160,6 +166,7 @@
 			children = (
 				2EC348DE26D1120F00CAA637 /* Constants.swift */,
 				2EC3490226D3723E00CAA637 /* Extensions.swift */,
+				2EC3492026DDCF0700CAA637 /* Protocols.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -195,6 +202,8 @@
 				2EC3490C26D9040800CAA637 /* PhotoFooter.swift */,
 				2EC3491A26DCC17900CAA637 /* TextViewIAView.swift */,
 				2EC3491826DCC0F000CAA637 /* TextViewIAView.xib */,
+				2EC3491C26DDC0A900CAA637 /* ChannelVC.swift */,
+				2EC3491E26DDC23B00CAA637 /* ChannelTableVC.swift */,
 			);
 			path = NoteEdit;
 			sourceTree = "<group>";
@@ -337,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EC3491B26DCC17900CAA637 /* TextViewIAView.swift in Sources */,
+				2EC3492126DDCF0700CAA637 /* Protocols.swift in Sources */,
 				2EC3491326DA837B00CAA637 /* NoteEditVC-DragDrop.swift in Sources */,
 				2EC348DD26D10A3C00CAA637 /* NearByVC.swift in Sources */,
 				2EC3490A26D7AE4600CAA637 /* PhotoCell.swift in Sources */,
@@ -349,11 +359,13 @@
 				2EC348D526D0D75700CAA637 /* HomeVC.swift in Sources */,
 				2EC3490126D2B19200CAA637 /* PostVC.swift in Sources */,
 				2EC3491526DB69EC00CAA637 /* NoteEditVC-CollectionView.swift in Sources */,
+				2EC3491D26DDC0A900CAA637 /* ChannelVC.swift in Sources */,
 				2EC3491726DCB1F000CAA637 /* NoteEditVC-Config.swift in Sources */,
 				2EC348D926D109D500CAA637 /* FollowVC.swift in Sources */,
 				2EC3490326D3723E00CAA637 /* Extensions.swift in Sources */,
 				2E17C5B726CF956200AE335F /* Guava.xcdatamodeld in Sources */,
 				2E17C5AF26CF956200AE335F /* SceneDelegate.swift in Sources */,
+				2EC3491F26DDC23B00CAA637 /* ChannelTableVC.swift in Sources */,
 				2EC348DB26D10A0500CAA637 /* DiscoveryVC.swift in Sources */,
 				2EC348DF26D1120F00CAA637 /* Constants.swift in Sources */,
 			);
