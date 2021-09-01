@@ -8,6 +8,9 @@
 import UIKit
 
 class POIVC: UIViewController {
+    
+    var delegate: POIVCDelegate?
+    var poiName = ""
 
     lazy var locationManager = AMapLocationManager()
     lazy var mapSearch = AMapSearchAPI()
@@ -16,8 +19,6 @@ class POIVC: UIViewController {
         request.location = AMapGeoPoint.location(withLatitude: CGFloat(latitude), longitude: CGFloat(longitude))
         request.requireExtension = true
         request.offset = kPOIsOffset
-
-//        request.types = kPOITypes
         return request
     }()
     
@@ -30,11 +31,16 @@ class POIVC: UIViewController {
         return request
     }()
     
+    lazy var footer = MJRefreshAutoNormalFooter()
+    
     var pois = kPOIsInitArr
     var aroundSearchedPOIs = kPOIsInitArr
     var latitude = 0.0
     var longitude = 0.0
     var keywords = ""
+    var currentAroundPage = 1
+    var currentKeywordsPage = 1
+    var pageCount = 1
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
@@ -44,55 +50,11 @@ class POIVC: UIViewController {
         
         config()
         requestLocation()
-        
-        mapSearch?.delegate = self
-    }
-}
 
-extension POIVC: UISearchBarDelegate{
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) { dismiss(animated: true) }
-    
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        if searchText.isEmpty{
-            pois = aroundSearchedPOIs
-            tableView.reloadData()
-        }
-    }
-    
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        guard let searchText = searchBar.text, !searchText.isBlank else { return }
-        keywords = searchText
-        pois.removeAll()
-        showLoadHUD()
-        keywordsSearchRequest.keywords = keywords
-        mapSearch?.aMapPOIKeywordsSearch(self.keywordsSearchRequest)
     }
 }
 
 
-extension POIVC: AMapSearchDelegate{
-    func onPOISearchDone(_ request: AMapPOISearchBaseRequest!, response: AMapPOISearchResponse!) {
-        
-        hideLoadHUD()
-        if response.count == 0{
-            return
-        }
-        
-        print(response.pois.count)
-        for poi in response.pois{
-            let province = poi.province == poi.city ? "" : poi.province
-            let address = poi.address == poi.district ? "" : poi.address
-            
-            let poi = [poi.name ?? kNoPOIPH, "\(province.unwrapperText)\(poi.city.unwrapperText)\(poi.district.unwrapperText)\(address.unwrapperText)"]
-            pois.append(poi)
-            if request is AMapPOIAroundSearchRequest{
-                aroundSearchedPOIs.append(poi)
-            }
-        }
-        
-        tableView.reloadData()
-    }
-}
 
 extension POIVC: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -102,12 +64,33 @@ extension POIVC: UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: kPOICellID, for: indexPath) as! POICell
         let poi = pois[indexPath.row]
-        
         cell.poi = poi
+        
+        if poi[0] == poiName{
+            cell.accessoryType = .checkmark
+        }
+        
         return cell
     }
 }
 
 extension POIVC: UITableViewDelegate{
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath)!
+        cell.accessoryType = .checkmark
+        
+        delegate?.updatePOIName(pois[indexPath.row][0])
+        
+        dismiss(animated: true)
+    }
+}
+
+extension POIVC{
+    func endRefreshing(_ currentPage: Int){
+        if currentPage < pageCount{
+            footer.endRefreshing()
+        }else{
+            footer.endRefreshingWithNoMoreData()
+        }
+    }
 }

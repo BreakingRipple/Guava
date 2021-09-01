@@ -4,9 +4,6 @@
 //
 //  Created by Savage on 1/9/21.
 //
-
-
-
 extension POIVC{
     func requestLocation(){
         
@@ -37,13 +34,16 @@ extension POIVC{
                 }
             }
             
+            guard let POIVC = self else { return }
+            
             if let location = location {
                 print("location:", location)
                 self?.latitude = location.coordinate.latitude
                 self?.longitude = location.coordinate.longitude
                 
                 //MARK: Search around POI
-                self?.mapSearch?.aMapPOIAroundSearch(self?.aroundSearchRequest)
+                POIVC.setAroundSearchFooter()
+                POIVC.makeAroundSearch()
             }
             
             if let reGeocode = reGeocode {
@@ -68,5 +68,27 @@ extension POIVC{
                 
             }
         })
+    }
+}
+
+extension POIVC{
+    func makeAroundSearch(_ page: Int = 1){
+        aroundSearchRequest.page = page
+        mapSearch?.aMapPOIAroundSearch(aroundSearchRequest)
+    }
+    
+    func setAroundSearchFooter(){
+        footer.resetNoMoreData()
+        footer.setRefreshingTarget(self, refreshingAction: #selector(aroundSearchPullToRefresh))
+    }
+}
+
+extension POIVC{
+    @objc private func aroundSearchPullToRefresh(){
+
+        currentAroundPage += 1
+        makeAroundSearch(currentAroundPage)
+        endRefreshing(currentAroundPage)
+        
     }
 }

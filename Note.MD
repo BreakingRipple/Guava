@@ -50,3 +50,7 @@
 ### Hash tag
 
 ### Location / POI: point of infomation 
+        1. https://lbs.amap.com/
+
+### Drop-down Refresh & Pull to Refresh
+        1. https://github.com/CoderMJLee/MJRefresh

@@ -117,7 +117,7 @@
                                                 </connections>
                                             </collectionView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Cye-Fu-Wms">
-                                                <rect key="frame" x="16" y="122" width="382" height="322"/>
+                                                <rect key="frame" x="16" y="122" width="382" height="323"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Hzz-gU-gKn">
                                                         <rect key="frame" x="0.0" y="0.0" width="382" height="201"/>
@@ -193,7 +193,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FjM-4U-Etm">
-                                                        <rect key="frame" x="0.0" y="201" width="382" height="121"/>
+                                                        <rect key="frame" x="0.0" y="201" width="382" height="122"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ZJs-X2-se4">
                                                                 <rect key="frame" x="0.0" y="0.0" width="382" height="61"/>
@@ -251,7 +251,7 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rfB-5U-e9f">
-                                                                <rect key="frame" x="0.0" y="61" width="382" height="60"/>
+                                                                <rect key="frame" x="0.0" y="61" width="382" height="61"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Y7N-3g-P4Z">
                                                                         <rect key="frame" x="0.0" y="0.0" width="382" height="60"/>
@@ -285,6 +285,13 @@
                                                                             <outletCollection property="gestureRecognizers" destination="SmA-gH-cOm" appends="YES" id="GXx-w6-Hoy"/>
                                                                         </connections>
                                                                     </stackView>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bgD-Fv-kNO">
+                                                                        <rect key="frame" x="0.0" y="60" width="382" height="1"/>
+                                                                        <color key="backgroundColor" systemColor="quaternaryLabelColor"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="1" id="dhd-uB-We4"/>
+                                                                        </constraints>
+                                                                    </view>
                                                                 </subviews>
                                                             </stackView>
                                                         </subviews>
@@ -329,6 +336,8 @@
                         <outlet property="channelLabel" destination="7cu-XK-Byf" id="tDB-55-qtt"/>
                         <outlet property="channelPlaceholderLabel" destination="EX4-OT-EcZ" id="zLS-jF-uOP"/>
                         <outlet property="photoCollectionView" destination="Zuf-2M-Kcz" id="aBr-Uf-0P4"/>
+                        <outlet property="poiNameIcon" destination="PbE-kC-0im" id="Mpr-GS-jlE"/>
+                        <outlet property="poiNameLabel" destination="ZAb-Mf-gmL" id="7D8-yF-LUj"/>
                         <outlet property="textView" destination="l6X-b4-TqO" id="J55-H1-ghJ"/>
                         <outlet property="titleCountLabel" destination="I7a-fS-S9y" id="QH4-71-VdL"/>
                         <outlet property="titleTextField" destination="iY9-Rb-J5u" id="xpV-gw-BVx"/>
@@ -423,7 +432,7 @@
                                 <rect key="frame" x="0.0" y="113" width="414" height="783"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="POICellID" id="FUT-8n-3aK" customClass="POICell" customModule="Guava" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="POICellID" id="FUT-8n-3aK" customClass="POICell" customModule="Guava" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="24.5" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FUT-8n-3aK" id="Rtr-yF-jWc">
@@ -453,6 +462,7 @@
                                                 <constraint firstItem="Auy-cE-RLl" firstAttribute="leading" secondItem="Rtr-yF-jWc" secondAttribute="leadingMargin" id="uej-k5-eBM"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="tintColor" name="main"/>
                                         <connections>
                                             <outlet property="addressLabel" destination="Xme-kI-hD6" id="j7X-7D-zQf"/>
                                             <outlet property="nameLabel" destination="9EY-Vb-vbs" id="cTS-rd-gLu"/>

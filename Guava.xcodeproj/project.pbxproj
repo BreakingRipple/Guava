@@ -42,6 +42,7 @@
 		2EC3492726DF2CD600CAA637 /* POICell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3492626DF2CD600CAA637 /* POICell.swift */; };
 		2EC3492926DF3B0500CAA637 /* POIVC-Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3492826DF3B0400CAA637 /* POIVC-Config.swift */; };
 		2EC3492B26DF3BA900CAA637 /* POIVC-Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3492A26DF3BA900CAA637 /* POIVC-Location.swift */; };
+		2EC3492D26DFD36E00CAA637 /* POIVC-KeywordsSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3492C26DFD36E00CAA637 /* POIVC-KeywordsSearch.swift */; };
 		6BBCA0A7FAC2BEB1B5843C81 /* Pods_Guava.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88842F55AA7CA6BB058A467 /* Pods_Guava.framework */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +92,7 @@
 		2EC3492626DF2CD600CAA637 /* POICell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POICell.swift; sourceTree = "<group>"; };
 		2EC3492826DF3B0400CAA637 /* POIVC-Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "POIVC-Config.swift"; sourceTree = "<group>"; };
 		2EC3492A26DF3BA900CAA637 /* POIVC-Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "POIVC-Location.swift"; sourceTree = "<group>"; };
+		2EC3492C26DFD36E00CAA637 /* POIVC-KeywordsSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "POIVC-KeywordsSearch.swift"; sourceTree = "<group>"; };
 		D83220223EB8DECDFA4C3E95 /* Pods-Guava.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guava.debug.xcconfig"; path = "Target Support Files/Pods-Guava/Pods-Guava.debug.xcconfig"; sourceTree = "<group>"; };
 		F88842F55AA7CA6BB058A467 /* Pods_Guava.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Guava.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -129,6 +131,7 @@
 		2E17C5AB26CF956200AE335F /* Guava */ = {
 			isa = PBXGroup;
 			children = (
+				2EC3491E26DDC23B00CAA637 /* ChannelTableVC.swift */,
 				2E17C5AC26CF956200AE335F /* AppDelegate.swift */,
 				2E17C5AE26CF956200AE335F /* SceneDelegate.swift */,
 				2E17C5B226CF956200AE335F /* Main.storyboard */,
@@ -211,11 +214,11 @@
 				2EC3491A26DCC17900CAA637 /* TextViewIAView.swift */,
 				2EC3491826DCC0F000CAA637 /* TextViewIAView.xib */,
 				2EC3491C26DDC0A900CAA637 /* ChannelVC.swift */,
-				2EC3491E26DDC23B00CAA637 /* ChannelTableVC.swift */,
 				2EC3492226DDF54900CAA637 /* POIVC.swift */,
 				2EC3492626DF2CD600CAA637 /* POICell.swift */,
 				2EC3492826DF3B0400CAA637 /* POIVC-Config.swift */,
 				2EC3492A26DF3BA900CAA637 /* POIVC-Location.swift */,
+				2EC3492C26DFD36E00CAA637 /* POIVC-KeywordsSearch.swift */,
 			);
 			path = NoteEdit;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 				2EC3490A26D7AE4600CAA637 /* PhotoCell.swift in Sources */,
 				2EC348FF26D2AF6700CAA637 /* TabBarC.swift in Sources */,
 				2EC348E226D2242F00CAA637 /* WaterfallVC.swift in Sources */,
+				2EC3492D26DFD36E00CAA637 /* POIVC-KeywordsSearch.swift in Sources */,
 				2EC348E426D22C1000CAA637 /* WaterfallCell.swift in Sources */,
 				2EC3490D26D9040800CAA637 /* PhotoFooter.swift in Sources */,
 				2EC3490826D6863E00CAA637 /* NoteEditVC.swift in Sources */,

@@ -18,6 +18,9 @@ protocol ChannelVCDelegate {
     /// - Parameter <#name#>: <#description#>
     /// - Parameter <#name#>  <#description#>
     /// - Returns:
-    
-    
+
+}
+
+protocol POIVCDelegate {
+    func updatePOIName(_ poiName: String)
 }
