@@ -46,3 +46,7 @@
 
 ### UITextView + placeholder : KMPlaceholderTextView
         1. https://github.com/MoZhouqi/KMPlaceholderTextView
+
+### Hash tag
+
+### Location / POI: point of infomation 

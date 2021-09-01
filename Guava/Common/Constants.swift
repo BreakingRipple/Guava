@@ -21,6 +21,7 @@ let kWaterfallCellID = "WaterfallCellID"
 let kPhotoCellID = "PhotoCellID"
 let kPhotoFooterID = "PhotoFooterID"
 let kSubChannelCellID = "SubChannelCellID"
+let kPOICellID = "POICellID"
 
 //MARK: resource file related
 let mainColor = UIColor(named: "main")!

@@ -30,6 +30,17 @@ extension UIViewController{
     //MARK: Display loading view and indicating view
     
     //MARK: Loading view -- hide manually
+    func showLoadHUD(_ title: String? = nil){
+        let hud = MBProgressHUD.showAdded(to: view, animated: true)
+        hud.label.text = title
+    }
+    
+    func hideLoadHUD(){
+        DispatchQueue.main.async {
+            MBProgressHUD.hide(for: self.view, animated: true)
+        }
+    }
+    
     
     //MARK: Indicating view -- hide automatically
     func showTextHUD(_ title: String, _ subTitle: String? = nil){

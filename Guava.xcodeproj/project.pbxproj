@@ -13,7 +13,7 @@
 		2E17C5B726CF956200AE335F /* Guava.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2E17C5B526CF956200AE335F /* Guava.xcdatamodeld */; };
 		2E17C5B926CF956400AE335F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E17C5B826CF956400AE335F /* Assets.xcassets */; };
 		2E17C5BC26CF956400AE335F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E17C5BA26CF956400AE335F /* LaunchScreen.storyboard */; };
-		2E17C5C426D0938D00AE335F /* Diary.MD in Resources */ = {isa = PBXBuildFile; fileRef = 2E17C5C326D0938D00AE335F /* Diary.MD */; };
+		2E17C5C426D0938D00AE335F /* Note.MD in Resources */ = {isa = PBXBuildFile; fileRef = 2E17C5C326D0938D00AE335F /* Note.MD */; };
 		2EC348D526D0D75700CAA637 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348D426D0D75700CAA637 /* HomeVC.swift */; };
 		2EC348D926D109D500CAA637 /* FollowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348D826D109D500CAA637 /* FollowVC.swift */; };
 		2EC348DB26D10A0500CAA637 /* DiscoveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348DA26D10A0500CAA637 /* DiscoveryVC.swift */; };
@@ -38,6 +38,10 @@
 		2EC3491D26DDC0A900CAA637 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3491C26DDC0A900CAA637 /* ChannelVC.swift */; };
 		2EC3491F26DDC23B00CAA637 /* ChannelTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3491E26DDC23B00CAA637 /* ChannelTableVC.swift */; };
 		2EC3492126DDCF0700CAA637 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3492026DDCF0700CAA637 /* Protocols.swift */; };
+		2EC3492326DDF54900CAA637 /* POIVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3492226DDF54900CAA637 /* POIVC.swift */; };
+		2EC3492726DF2CD600CAA637 /* POICell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3492626DF2CD600CAA637 /* POICell.swift */; };
+		2EC3492926DF3B0500CAA637 /* POIVC-Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3492826DF3B0400CAA637 /* POIVC-Config.swift */; };
+		2EC3492B26DF3BA900CAA637 /* POIVC-Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3492A26DF3BA900CAA637 /* POIVC-Location.swift */; };
 		6BBCA0A7FAC2BEB1B5843C81 /* Pods_Guava.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88842F55AA7CA6BB058A467 /* Pods_Guava.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +55,7 @@
 		2E17C5B826CF956400AE335F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E17C5BB26CF956400AE335F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E17C5BD26CF956400AE335F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2E17C5C326D0938D00AE335F /* Diary.MD */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Diary.MD; sourceTree = "<group>"; };
+		2E17C5C326D0938D00AE335F /* Note.MD */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Note.MD; sourceTree = "<group>"; };
 		2EC348D426D0D75700CAA637 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		2EC348D826D109D500CAA637 /* FollowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowVC.swift; sourceTree = "<group>"; };
 		2EC348DA26D10A0500CAA637 /* DiscoveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryVC.swift; sourceTree = "<group>"; };
@@ -83,6 +87,10 @@
 		2EC3491C26DDC0A900CAA637 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		2EC3491E26DDC23B00CAA637 /* ChannelTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelTableVC.swift; sourceTree = "<group>"; };
 		2EC3492026DDCF0700CAA637 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		2EC3492226DDF54900CAA637 /* POIVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIVC.swift; sourceTree = "<group>"; };
+		2EC3492626DF2CD600CAA637 /* POICell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POICell.swift; sourceTree = "<group>"; };
+		2EC3492826DF3B0400CAA637 /* POIVC-Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "POIVC-Config.swift"; sourceTree = "<group>"; };
+		2EC3492A26DF3BA900CAA637 /* POIVC-Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "POIVC-Location.swift"; sourceTree = "<group>"; };
 		D83220223EB8DECDFA4C3E95 /* Pods-Guava.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Guava.debug.xcconfig"; path = "Target Support Files/Pods-Guava/Pods-Guava.debug.xcconfig"; sourceTree = "<group>"; };
 		F88842F55AA7CA6BB058A467 /* Pods_Guava.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Guava.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -102,7 +110,7 @@
 		2E17C5A026CF956200AE335F = {
 			isa = PBXGroup;
 			children = (
-				2E17C5C326D0938D00AE335F /* Diary.MD */,
+				2E17C5C326D0938D00AE335F /* Note.MD */,
 				2E17C5AB26CF956200AE335F /* Guava */,
 				2E17C5AA26CF956200AE335F /* Products */,
 				DA7BFB8CB5278BC6E2EB5BBE /* Pods */,
@@ -204,6 +212,10 @@
 				2EC3491826DCC0F000CAA637 /* TextViewIAView.xib */,
 				2EC3491C26DDC0A900CAA637 /* ChannelVC.swift */,
 				2EC3491E26DDC23B00CAA637 /* ChannelTableVC.swift */,
+				2EC3492226DDF54900CAA637 /* POIVC.swift */,
+				2EC3492626DF2CD600CAA637 /* POICell.swift */,
+				2EC3492826DF3B0400CAA637 /* POIVC-Config.swift */,
+				2EC3492A26DF3BA900CAA637 /* POIVC-Location.swift */,
 			);
 			path = NoteEdit;
 			sourceTree = "<group>";
@@ -288,7 +300,7 @@
 				2EC3491926DCC0F000CAA637 /* TextViewIAView.xib in Resources */,
 				2EC348F626D2991200CAA637 /* Localizable.strings in Resources */,
 				2EC348FA26D29DA200CAA637 /* InfoPlist.strings in Resources */,
-				2E17C5C426D0938D00AE335F /* Diary.MD in Resources */,
+				2E17C5C426D0938D00AE335F /* Note.MD in Resources */,
 				2EC3491126DA7B8000CAA637 /* testVideo.mp4 in Resources */,
 				2E17C5BC26CF956400AE335F /* LaunchScreen.storyboard in Resources */,
 				2E17C5B926CF956400AE335F /* Assets.xcassets in Resources */,
@@ -345,8 +357,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EC3492726DF2CD600CAA637 /* POICell.swift in Sources */,
 				2EC3491B26DCC17900CAA637 /* TextViewIAView.swift in Sources */,
 				2EC3492126DDCF0700CAA637 /* Protocols.swift in Sources */,
+				2EC3492B26DF3BA900CAA637 /* POIVC-Location.swift in Sources */,
 				2EC3491326DA837B00CAA637 /* NoteEditVC-DragDrop.swift in Sources */,
 				2EC348DD26D10A3C00CAA637 /* NearByVC.swift in Sources */,
 				2EC3490A26D7AE4600CAA637 /* PhotoCell.swift in Sources */,
@@ -368,6 +382,8 @@
 				2EC3491F26DDC23B00CAA637 /* ChannelTableVC.swift in Sources */,
 				2EC348DB26D10A0500CAA637 /* DiscoveryVC.swift in Sources */,
 				2EC348DF26D1120F00CAA637 /* Constants.swift in Sources */,
+				2EC3492326DDF54900CAA637 /* POIVC.swift in Sources */,
+				2EC3492926DF3B0500CAA637 /* POIVC-Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
