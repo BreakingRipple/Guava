@@ -7,6 +7,15 @@
 
 import UIKit
 
+extension String{
+    var isBlank: Bool{
+        self.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+    }
+}
+
+extension Optional where Wrapped == String{
+    var unwrapperText: String{ self ?? ""}
+}
 
 extension UITextField{
     var unwrapperText: String{ text ?? ""}

@@ -410,11 +410,14 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="K5w-Mn-gkR"/>
                                 </constraints>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
                                 <scopeButtonTitles>
                                     <string>Title</string>
                                     <string>Title</string>
                                 </scopeButtonTitles>
+                                <connections>
+                                    <outlet property="delegate" destination="9s3-t3-zsC" id="JCe-fB-B2K"/>
+                                </connections>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eeK-53-5tP">
                                 <rect key="frame" x="0.0" y="113" width="414" height="783"/>
@@ -452,7 +455,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="addressLabel" destination="Xme-kI-hD6" id="j7X-7D-zQf"/>
-                                            <outlet property="titleLabel" destination="9EY-Vb-vbs" id="zbe-BR-O5B"/>
+                                            <outlet property="nameLabel" destination="9EY-Vb-vbs" id="cTS-rd-gLu"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -485,6 +488,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="searchBar" destination="djU-fH-6d2" id="P4G-0Q-lts"/>
                         <outlet property="tableView" destination="eeK-53-5tP" id="pth-7y-Pat"/>
                     </connections>
                 </viewController>
