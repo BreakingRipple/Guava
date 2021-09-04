@@ -10,9 +10,10 @@ import UIKit
 class NoteEditVC: UIViewController {
     
     var photos = [
-        UIImage(named: "25")!, UIImage(named: "26")!
+        UIImage(named: "3")!, UIImage(named: "4")!, UIImage(named: "5")!, UIImage(named: "6")!, UIImage(named: "25")!
     ]
-//    var videoURL: URL = Bundle.main.url(forResource: "testVideo", withExtension: "mp4")!
+    
+//    var videoURL: URL? = Bundle.main.url(forResource: "TV", withExtension: "mp4")
     var videoURL: URL?
     
     var channel = ""
@@ -35,11 +36,10 @@ class NoteEditVC: UIViewController {
     var isVideo: Bool { videoURL != nil }
     var textViewIAView: TextViewIAView{ textView.inputAccessoryView as! TextViewIAView }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         config()
-
+        
     }
 
     @IBAction func TFEditBegin(_ sender: Any) {
@@ -63,14 +63,56 @@ class NoteEditVC: UIViewController {
 //                self.titleTextField.selectedTextRange = self.titleTextField.textRange(from: end, to: end)
 //            }
 //        }
-        
         titleCountLabel.text = "\(kMaxNoteTitleCount - titleTextField.unwrapperText.count)"
     }
     
     // need to do draft
+    @IBAction func saveDraftNote(_ sender: Any) {
+        guard textViewIAView.currentTextCount <= kMaxNoteTextCount else {
+            showTextHUD("No more than \(kMaxNoteTextCount) words.")
+            return
+        }
+        
+        let draftNote = DraftNote(context: context)
+        
+        //video
+        if isVideo {
+            draftNote.video = try? Data(contentsOf: videoURL!)
+        }
+        draftNote.isVideo = isVideo
+        //cover photo
+        draftNote.coverPhoto = photos[0].jpeg(.high)
+        //all photos
+        var photos: [Data] = []
+        for photo in self.photos{
+            if let pngData = photo.pngData(){
+                photos.append(pngData)
+            }
+        }
+        draftNote.photos = try? JSONEncoder().encode(photos)
+        
+        //string
+        draftNote.title = titleTextField.exactText
+        draftNote.text = textView.exactText
+        draftNote.channel = channel
+        draftNote.subChannel = subChannel
+        draftNote.poiName = poiName
+        draftNote.updatedAt = Date()
+        
+        appDelegate.saveContext()
+        
+    }
+    
+    @IBAction func postNote(_ sender: Any) {
+        
+        
+        
+        
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let channelVC = segue.destination as? ChannelVC{
+            view.endEditing(true)
             channelVC.PVdelegate = self
         }else if let poiVC = segue.destination as? POIVC{
             poiVC.delegate = self
@@ -99,7 +141,6 @@ extension NoteEditVC: ChannelVCDelegate{
         channelLabel.text = subChannel
         channelLabel.textColor = blueColor
         channelPlaceholderLabel.isHidden = true
-        
     }
 }
 
@@ -112,7 +153,6 @@ extension NoteEditVC: POIVCDelegate{
             poiNameIcon.tintColor = .label
             poiNameLabel.text = "add spot"
             poiNameLabel.textColor = .label
-            
         }else{
             self.poiName = poiName
             //UI
@@ -144,7 +184,6 @@ extension NoteEditVC: UITextFieldDelegate{
 //            showTextHUD("total character count is no more than \(kMaxNoteTitleCount)")
 //        }
 //        return !isExceed
-        
         
         // 2:
         // get the current text, or use an empty string if that failed

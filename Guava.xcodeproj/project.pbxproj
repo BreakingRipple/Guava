@@ -10,10 +10,15 @@
 		2E17C5AD26CF956200AE335F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E17C5AC26CF956200AE335F /* AppDelegate.swift */; };
 		2E17C5AF26CF956200AE335F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E17C5AE26CF956200AE335F /* SceneDelegate.swift */; };
 		2E17C5B426CF956200AE335F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E17C5B226CF956200AE335F /* Main.storyboard */; };
-		2E17C5B726CF956200AE335F /* Guava.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2E17C5B526CF956200AE335F /* Guava.xcdatamodeld */; };
 		2E17C5B926CF956400AE335F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E17C5B826CF956400AE335F /* Assets.xcassets */; };
 		2E17C5BC26CF956400AE335F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E17C5BA26CF956400AE335F /* LaunchScreen.storyboard */; };
 		2E17C5C426D0938D00AE335F /* Note.MD in Resources */ = {isa = PBXBuildFile; fileRef = 2E17C5C326D0938D00AE335F /* Note.MD */; };
+		2E3DCDB426E10B4400149F59 /* Guava.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2E3DCDB226E10B4400149F59 /* Guava.xcdatamodeld */; };
+		2E3DCDB626E211A000149F59 /* TV.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2E3DCDB526E211A000149F59 /* TV.mp4 */; };
+		2E3DCDB826E236B100149F59 /* DraftNoteWaterfallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3DCDB726E236B100149F59 /* DraftNoteWaterfallCell.swift */; };
+		2E3DCDBA26E2728100149F59 /* WaterfallVC-LoadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3DCDB926E2728100149F59 /* WaterfallVC-LoadData.swift */; };
+		2E3DCDBC26E272F300149F59 /* WaterfallVC-Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3DCDBB26E272F300149F59 /* WaterfallVC-Config.swift */; };
+		2E3DCDBE26E329DE00149F59 /* WaterfallVC-DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3DCDBD26E329DE00149F59 /* WaterfallVC-DataSource.swift */; };
 		2EC348D526D0D75700CAA637 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348D426D0D75700CAA637 /* HomeVC.swift */; };
 		2EC348D926D109D500CAA637 /* FollowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348D826D109D500CAA637 /* FollowVC.swift */; };
 		2EC348DB26D10A0500CAA637 /* DiscoveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348DA26D10A0500CAA637 /* DiscoveryVC.swift */; };
@@ -29,7 +34,7 @@
 		2EC3490826D6863E00CAA637 /* NoteEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3490726D6863D00CAA637 /* NoteEditVC.swift */; };
 		2EC3490A26D7AE4600CAA637 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3490926D7AE4600CAA637 /* PhotoCell.swift */; };
 		2EC3490D26D9040800CAA637 /* PhotoFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3490C26D9040800CAA637 /* PhotoFooter.swift */; };
-		2EC3491126DA7B8000CAA637 /* testVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2EC3491026DA7A1800CAA637 /* testVideo.mp4 */; };
+		2EC3491126DA7B8000CAA637 /* TV1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2EC3491026DA7A1800CAA637 /* TV1.mp4 */; };
 		2EC3491326DA837B00CAA637 /* NoteEditVC-DragDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3491226DA837B00CAA637 /* NoteEditVC-DragDrop.swift */; };
 		2EC3491526DB69EC00CAA637 /* NoteEditVC-CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3491426DB69EC00CAA637 /* NoteEditVC-CollectionView.swift */; };
 		2EC3491726DCB1F000CAA637 /* NoteEditVC-Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC3491626DCB1EF00CAA637 /* NoteEditVC-Config.swift */; };
@@ -52,11 +57,16 @@
 		2E17C5AC26CF956200AE335F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E17C5AE26CF956200AE335F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2E17C5B326CF956200AE335F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2E17C5B626CF956200AE335F /* Guava.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Guava.xcdatamodel; sourceTree = "<group>"; };
 		2E17C5B826CF956400AE335F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E17C5BB26CF956400AE335F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E17C5BD26CF956400AE335F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E17C5C326D0938D00AE335F /* Note.MD */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Note.MD; sourceTree = "<group>"; };
+		2E3DCDB326E10B4400149F59 /* Guava.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Guava.xcdatamodel; sourceTree = "<group>"; };
+		2E3DCDB526E211A000149F59 /* TV.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TV.mp4; sourceTree = "<group>"; };
+		2E3DCDB726E236B100149F59 /* DraftNoteWaterfallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftNoteWaterfallCell.swift; sourceTree = "<group>"; };
+		2E3DCDB926E2728100149F59 /* WaterfallVC-LoadData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WaterfallVC-LoadData.swift"; sourceTree = "<group>"; };
+		2E3DCDBB26E272F300149F59 /* WaterfallVC-Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WaterfallVC-Config.swift"; sourceTree = "<group>"; };
+		2E3DCDBD26E329DE00149F59 /* WaterfallVC-DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WaterfallVC-DataSource.swift"; sourceTree = "<group>"; };
 		2EC348D426D0D75700CAA637 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		2EC348D826D109D500CAA637 /* FollowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowVC.swift; sourceTree = "<group>"; };
 		2EC348DA26D10A0500CAA637 /* DiscoveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryVC.swift; sourceTree = "<group>"; };
@@ -79,7 +89,7 @@
 		2EC3490B26D7EB6300CAA637 /* CreateCollectionViewByCode.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CreateCollectionViewByCode.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		2EC3490C26D9040800CAA637 /* PhotoFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFooter.swift; sourceTree = "<group>"; };
 		2EC3490F26DA146600CAA637 /* Guava-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Guava-Bridging-Header.h"; sourceTree = "<group>"; };
-		2EC3491026DA7A1800CAA637 /* testVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = testVideo.mp4; sourceTree = "<group>"; };
+		2EC3491026DA7A1800CAA637 /* TV1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TV1.mp4; sourceTree = "<group>"; };
 		2EC3491226DA837B00CAA637 /* NoteEditVC-DragDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-DragDrop.swift"; sourceTree = "<group>"; };
 		2EC3491426DB69EC00CAA637 /* NoteEditVC-CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-CollectionView.swift"; sourceTree = "<group>"; };
 		2EC3491626DCB1EF00CAA637 /* NoteEditVC-Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-Config.swift"; sourceTree = "<group>"; };
@@ -145,9 +155,10 @@
 				2E17C5BA26CF956400AE335F /* LaunchScreen.storyboard */,
 				2EC3490426D38B9D00CAA637 /* Demos+Placeholder */,
 				2E17C5BD26CF956400AE335F /* Info.plist */,
-				2E17C5B526CF956200AE335F /* Guava.xcdatamodeld */,
 				2EC3490F26DA146600CAA637 /* Guava-Bridging-Header.h */,
-				2EC3491026DA7A1800CAA637 /* testVideo.mp4 */,
+				2E3DCDB226E10B4400149F59 /* Guava.xcdatamodeld */,
+				2EC3491026DA7A1800CAA637 /* TV1.mp4 */,
+				2E3DCDB526E211A000149F59 /* TV.mp4 */,
 			);
 			path = Guava;
 			sourceTree = "<group>";
@@ -167,7 +178,11 @@
 			isa = PBXGroup;
 			children = (
 				2EC348E126D2242F00CAA637 /* WaterfallVC.swift */,
+				2E3DCDBB26E272F300149F59 /* WaterfallVC-Config.swift */,
+				2E3DCDBD26E329DE00149F59 /* WaterfallVC-DataSource.swift */,
 				2EC348E326D22C1000CAA637 /* WaterfallCell.swift */,
+				2E3DCDB726E236B100149F59 /* DraftNoteWaterfallCell.swift */,
+				2E3DCDB926E2728100149F59 /* WaterfallVC-LoadData.swift */,
 			);
 			path = Waterfall;
 			sourceTree = "<group>";
@@ -301,10 +316,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EC3491926DCC0F000CAA637 /* TextViewIAView.xib in Resources */,
+				2E3DCDB626E211A000149F59 /* TV.mp4 in Resources */,
 				2EC348F626D2991200CAA637 /* Localizable.strings in Resources */,
 				2EC348FA26D29DA200CAA637 /* InfoPlist.strings in Resources */,
 				2E17C5C426D0938D00AE335F /* Note.MD in Resources */,
-				2EC3491126DA7B8000CAA637 /* testVideo.mp4 in Resources */,
+				2EC3491126DA7B8000CAA637 /* TV1.mp4 in Resources */,
 				2E17C5BC26CF956400AE335F /* LaunchScreen.storyboard in Resources */,
 				2E17C5B926CF956400AE335F /* Assets.xcassets in Resources */,
 				2E17C5B426CF956200AE335F /* Main.storyboard in Resources */,
@@ -370,6 +386,7 @@
 				2EC348FF26D2AF6700CAA637 /* TabBarC.swift in Sources */,
 				2EC348E226D2242F00CAA637 /* WaterfallVC.swift in Sources */,
 				2EC3492D26DFD36E00CAA637 /* POIVC-KeywordsSearch.swift in Sources */,
+				2E3DCDBE26E329DE00149F59 /* WaterfallVC-DataSource.swift in Sources */,
 				2EC348E426D22C1000CAA637 /* WaterfallCell.swift in Sources */,
 				2EC3490D26D9040800CAA637 /* PhotoFooter.swift in Sources */,
 				2EC3490826D6863E00CAA637 /* NoteEditVC.swift in Sources */,
@@ -378,16 +395,19 @@
 				2EC3490126D2B19200CAA637 /* PostVC.swift in Sources */,
 				2EC3491526DB69EC00CAA637 /* NoteEditVC-CollectionView.swift in Sources */,
 				2EC3491D26DDC0A900CAA637 /* ChannelVC.swift in Sources */,
+				2E3DCDB426E10B4400149F59 /* Guava.xcdatamodeld in Sources */,
+				2E3DCDBA26E2728100149F59 /* WaterfallVC-LoadData.swift in Sources */,
 				2EC3491726DCB1F000CAA637 /* NoteEditVC-Config.swift in Sources */,
 				2EC348D926D109D500CAA637 /* FollowVC.swift in Sources */,
 				2EC3490326D3723E00CAA637 /* Extensions.swift in Sources */,
-				2E17C5B726CF956200AE335F /* Guava.xcdatamodeld in Sources */,
 				2E17C5AF26CF956200AE335F /* SceneDelegate.swift in Sources */,
 				2EC3491F26DDC23B00CAA637 /* ChannelTableVC.swift in Sources */,
+				2E3DCDBC26E272F300149F59 /* WaterfallVC-Config.swift in Sources */,
 				2EC348DB26D10A0500CAA637 /* DiscoveryVC.swift in Sources */,
 				2EC348DF26D1120F00CAA637 /* Constants.swift in Sources */,
 				2EC3492326DDF54900CAA637 /* POIVC.swift in Sources */,
 				2EC3492926DF3B0500CAA637 /* POIVC-Config.swift in Sources */,
+				2E3DCDB826E236B100149F59 /* DraftNoteWaterfallCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,12 +636,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		2E17C5B526CF956200AE335F /* Guava.xcdatamodeld */ = {
+		2E3DCDB226E10B4400149F59 /* Guava.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				2E17C5B626CF956200AE335F /* Guava.xcdatamodel */,
+				2E3DCDB326E10B4400149F59 /* Guava.xcdatamodel */,
 			);
-			currentVersion = 2E17C5B626CF956200AE335F /* Guava.xcdatamodel */;
+			currentVersion = 2E3DCDB326E10B4400149F59 /* Guava.xcdatamodel */;
 			path = Guava.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

@@ -22,13 +22,23 @@ let kPhotoCellID = "PhotoCellID"
 let kPhotoFooterID = "PhotoFooterID"
 let kSubChannelCellID = "SubChannelCellID"
 let kPOICellID = "POICellID"
+let kDraftNoteWaterfallCellID = "DraftNoteWaterfallCellID"
 
 //MARK: resource file related
 let mainColor = UIColor(named: "main")!
 let blueColor = UIColor(named: "blue")!
+let imagePH = UIImage(named: "imagePH")!
+
+//MARK: CoreData
+let appDelegate = UIApplication.shared.delegate as! AppDelegate
+let context = appDelegate.persistentContainer.viewContext
+
+//MARK: UI layout
+let screenRect = UIScreen.main.bounds
 
 // MARK: waterfall
 let kWaterfallPadding: CGFloat = 4
+let kDraftNoteWaterfallCellBottomViewH: CGFloat = 56
 let kChannels = ["For you", "Video", "Live", "Gaming", "Travel", "Fashion", "Vlog", "Photography"]
 
 //YPImagePicker

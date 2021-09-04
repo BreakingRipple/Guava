@@ -35,7 +35,26 @@ extension NoteEditVC{
         textViewIAView.doneBtn.addTarget(self, action: #selector(resignTextView), for: .touchUpInside)
         textViewIAView.maxTextCountLabel.text = "/\(kMaxNoteTextCount)"
         
+        // request permission 
         locationManager.requestWhenInUseAuthorization()
+        
+        //        //MARK: related to file
+        //        // sandbox root directory
+                print(NSHomeDirectory())
+        //        print(NSTemporaryDirectory())
+        //        // first method to find a file: return PATH (common string)
+        //        print(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0])
+        //        // secode method to find a file: return URL (resource file)
+        //        print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0])
+        //        // two examples of url
+        //        file:///xxx/xx.mov (local url)
+        //        https://xxx//xx.mov (remote url)
+        
+        //        do {
+        //            try FileManager.default.removeItem(atPath: "\(NSHomeDirectory())/Library/SplashBoard")
+        //        } catch {
+        //            print(error)
+        //        }
         
     }
 }

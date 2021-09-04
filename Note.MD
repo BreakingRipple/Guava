@@ -54,3 +54,12 @@
 
 ### Drop-down Refresh & Pull to Refresh
         1. https://github.com/CoderMJLee/MJRefresh
+
+### Core Data
+        1. Create entity(table in DB) in "Guava.xcdatamodeld"
+        2. add attribute
+        3. sort
+        
+
+### Date
+        1. https://github.com/MatthewYork/DateTools
