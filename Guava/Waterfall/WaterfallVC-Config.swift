@@ -20,5 +20,9 @@ extension WaterfallVC{
 //        if isMyDraft{
 //            layout.sectionInset = UIEdgeInsets(top: 44, left: kWaterfallPadding, bottom: kWaterfallPadding, right: kWaterfallPadding)
 //        }
+        if isMyDraft{
+            navigationItem.title = "Draft"
+            
+        }
     }
 }

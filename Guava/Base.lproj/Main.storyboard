@@ -642,10 +642,10 @@
             </objects>
             <point key="canvasLocation" x="22" y="-1272"/>
         </scene>
-        <!--View Controller-->
+        <!--MeVC-->
         <scene sceneID="1P7-NV-8Fa">
             <objects>
-                <viewController id="4FW-sE-ffn" sceneMemberID="viewController">
+                <viewController id="4FW-sE-ffn" customClass="MeVC" customModule="Guava" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NNP-UD-MoS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

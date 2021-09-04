@@ -23,6 +23,7 @@
 		2E3DCDC226E39EEB00149F59 /* NoteEditVC-Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3DCDC126E39EEB00149F59 /* NoteEditVC-Helper.swift */; };
 		2E3DCDC426E3A07100149F59 /* NoteEditVC-UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3DCDC326E3A07100149F59 /* NoteEditVC-UI.swift */; };
 		2E3DCDC626E3B89600149F59 /* NoteEditVC-DraftNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3DCDC526E3B89600149F59 /* NoteEditVC-DraftNote.swift */; };
+		2E3DCDC826E3D32C00149F59 /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3DCDC726E3D32C00149F59 /* MeVC.swift */; };
 		2EC348D526D0D75700CAA637 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348D426D0D75700CAA637 /* HomeVC.swift */; };
 		2EC348D926D109D500CAA637 /* FollowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348D826D109D500CAA637 /* FollowVC.swift */; };
 		2EC348DB26D10A0500CAA637 /* DiscoveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348DA26D10A0500CAA637 /* DiscoveryVC.swift */; };
@@ -75,6 +76,7 @@
 		2E3DCDC126E39EEB00149F59 /* NoteEditVC-Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-Helper.swift"; sourceTree = "<group>"; };
 		2E3DCDC326E3A07100149F59 /* NoteEditVC-UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-UI.swift"; sourceTree = "<group>"; };
 		2E3DCDC526E3B89600149F59 /* NoteEditVC-DraftNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-DraftNote.swift"; sourceTree = "<group>"; };
+		2E3DCDC726E3D32C00149F59 /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		2EC348D426D0D75700CAA637 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		2EC348D826D109D500CAA637 /* FollowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowVC.swift; sourceTree = "<group>"; };
 		2EC348DA26D10A0500CAA637 /* DiscoveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryVC.swift; sourceTree = "<group>"; };
@@ -149,11 +151,11 @@
 		2E17C5AB26CF956200AE335F /* Guava */ = {
 			isa = PBXGroup;
 			children = (
-				2EC3491E26DDC23B00CAA637 /* ChannelTableVC.swift */,
 				2E17C5AC26CF956200AE335F /* AppDelegate.swift */,
 				2E17C5AE26CF956200AE335F /* SceneDelegate.swift */,
 				2E17C5B226CF956200AE335F /* Main.storyboard */,
 				2EC348FE26D2AF6700CAA637 /* TabBarC.swift */,
+				2E3DCDC726E3D32C00149F59 /* MeVC.swift */,
 				2EC3490E26D933D300CAA637 /* NoteEdit */,
 				2EC348E026D1139200CAA637 /* Home */,
 				2EC348E526D2560700CAA637 /* Waterfall */,
@@ -240,6 +242,7 @@
 				2EC3490C26D9040800CAA637 /* PhotoFooter.swift */,
 				2EC3491A26DCC17900CAA637 /* TextViewIAView.swift */,
 				2EC3491826DCC0F000CAA637 /* TextViewIAView.xib */,
+				2EC3491E26DDC23B00CAA637 /* ChannelTableVC.swift */,
 				2EC3491C26DDC0A900CAA637 /* ChannelVC.swift */,
 				2EC3492226DDF54900CAA637 /* POIVC.swift */,
 				2EC3492626DF2CD600CAA637 /* POICell.swift */,
@@ -405,6 +408,7 @@
 				2E3DCDC626E3B89600149F59 /* NoteEditVC-DraftNote.swift in Sources */,
 				2EC3490826D6863E00CAA637 /* NoteEditVC.swift in Sources */,
 				2E17C5AD26CF956200AE335F /* AppDelegate.swift in Sources */,
+				2E3DCDC826E3D32C00149F59 /* MeVC.swift in Sources */,
 				2EC348D526D0D75700CAA637 /* HomeVC.swift in Sources */,
 				2E3DCDC426E3A07100149F59 /* NoteEditVC-UI.swift in Sources */,
 				2EC3490126D2B19200CAA637 /* PostVC.swift in Sources */,
