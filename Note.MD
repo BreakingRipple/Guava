@@ -58,8 +58,18 @@
 ### Core Data
         1. Create entity(table in DB) in "Guava.xcdatamodeld"
         2. add attribute
-        3. sort
-        
+        3. sort & select
 
 ### Date
         1. https://github.com/MatthewYork/DateTools
+        
+### Three ways to jump from one page to another
+        1. tab bar 
+        2. navigation controller (push)  
+        3. present
+
+### map( )
+
+### pass value
+        1. delegate
+        2. closure  "var updateDraftNoteFinished: (() -> ())?"

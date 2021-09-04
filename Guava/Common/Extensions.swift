@@ -152,3 +152,38 @@ extension Bundle{
     }
     
 }
+
+extension FileManager{
+    func save(_ data: Data?, to dirName: String, as fileName: String) -> URL?{
+        guard let data = data else {
+//            print("no data to write.")
+            return nil
+        }
+        
+        // "file://xx/xx/tmp/dirName"
+        // temporaryDirectory == URL(fileURLWithPath: NSTemporaryDirectory())
+        // PATH -> URL
+        let dirURL = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(dirName, isDirectory: true)
+        
+        // URL -> PATH
+        if !fileExists(atPath: dirURL.path){
+            guard let _ = try? createDirectory(at: dirURL, withIntermediateDirectories: true) else {
+                print("fail to create a directory.")
+                return nil
+            }
+            
+        }
+        
+        // "file://xx/xx/tmp/dirName/fileName"
+        let fileURL = dirURL.appendingPathComponent(fileName)
+        
+        if !fileExists(atPath: fileURL.path){
+            guard let _ = try? data.write(to: fileURL) else {
+                print("fail to save file.")
+                return nil
+            }
+        }
+        
+        return fileURL
+    }
+}

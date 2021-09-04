@@ -40,7 +40,7 @@ extension NoteEditVC{
         
         //        //MARK: related to file
         //        // sandbox root directory
-                print(NSHomeDirectory())
+//                print(NSHomeDirectory())
         //        print(NSTemporaryDirectory())
         //        // first method to find a file: return PATH (common string)
         //        print(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0])

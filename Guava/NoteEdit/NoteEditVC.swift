@@ -9,6 +9,10 @@ import UIKit
 
 class NoteEditVC: UIViewController {
     
+    var draftNote: DraftNote?
+    
+    var updateDraftNoteFinished: (() -> ())?
+    
     var photos = [
         UIImage(named: "3")!, UIImage(named: "4")!, UIImage(named: "5")!, UIImage(named: "6")!, UIImage(named: "25")!
     ]
@@ -39,6 +43,7 @@ class NoteEditVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         config()
+        setUI()
         
     }
 
@@ -54,60 +59,23 @@ class NoteEditVC: UIViewController {
     }
     
     @IBAction func TFEditChanged(_ sender: Any) {
-//        guard titleTextField.markedTextRange == nil else { return }
-//        if titleTextField.unwrapperText.count > kMaxNoteTitleCount{
-//            titleTextField.text = String(titleTextField.unwrapperText.prefix(kMaxNoteTitleCount))
-//            showTextHUD("no more than \(kMaxNoteTitleCount) characters")
-//            DispatchQueue.main.async {
-//                let end = self.titleTextField.endOfDocument
-//                self.titleTextField.selectedTextRange = self.titleTextField.textRange(from: end, to: end)
-//            }
-//        }
-        titleCountLabel.text = "\(kMaxNoteTitleCount - titleTextField.unwrapperText.count)"
+        handleTFEditChange()
     }
     
     // need to do draft
     @IBAction func saveDraftNote(_ sender: Any) {
-        guard textViewIAView.currentTextCount <= kMaxNoteTextCount else {
-            showTextHUD("No more than \(kMaxNoteTextCount) words.")
-            return
+        validateNote()
+        
+        if let draftNote = draftNote{
+            updateDraftNote(draftNote)
+        }else{
+            createDraftNote()
         }
-        
-        let draftNote = DraftNote(context: context)
-        
-        //video
-        if isVideo {
-            draftNote.video = try? Data(contentsOf: videoURL!)
-        }
-        draftNote.isVideo = isVideo
-        //cover photo
-        draftNote.coverPhoto = photos[0].jpeg(.high)
-        //all photos
-        var photos: [Data] = []
-        for photo in self.photos{
-            if let pngData = photo.pngData(){
-                photos.append(pngData)
-            }
-        }
-        draftNote.photos = try? JSONEncoder().encode(photos)
-        
-        //string
-        draftNote.title = titleTextField.exactText
-        draftNote.text = textView.exactText
-        draftNote.channel = channel
-        draftNote.subChannel = subChannel
-        draftNote.poiName = poiName
-        draftNote.updatedAt = Date()
-        
-        appDelegate.saveContext()
         
     }
     
     @IBAction func postNote(_ sender: Any) {
-        
-        
-        
-        
+        validateNote()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -119,7 +87,6 @@ class NoteEditVC: UIViewController {
             poiVC.poiName = poiName
         }
     }
-    
 }
 
 extension NoteEditVC: UITextViewDelegate{
@@ -137,10 +104,7 @@ extension NoteEditVC: ChannelVCDelegate{
         self.subChannel = subChannel
         
         //UI
-        channelIcon.tintColor = blueColor
-        channelLabel.text = subChannel
-        channelLabel.textColor = blueColor
-        channelPlaceholderLabel.isHidden = true
+        updateChannelUI()
     }
 }
 
@@ -150,16 +114,12 @@ extension NoteEditVC: POIVCDelegate{
         //datasource
         if poiName == kPOIsInitArr[0][0]{
             self.poiName = ""
-            poiNameIcon.tintColor = .label
-            poiNameLabel.text = "add spot"
-            poiNameLabel.textColor = .label
         }else{
             self.poiName = poiName
-            //UI
-            poiNameIcon.tintColor = blueColor
-            poiNameLabel.text = poiName
-            poiNameLabel.textColor = blueColor
         }
+        
+        //UI
+        updatePOINameUI()
     }
 }
 

@@ -22,6 +22,7 @@ class WaterfallVC: UICollectionViewController {
         
         config()
         getDraftNotes()
+        
 //        layout.itemRenderDirection = .shortestFirst
 //
 //        //Uncomment the following line to preserve selection between presentations
@@ -31,7 +32,7 @@ class WaterfallVC: UICollectionViewController {
 //        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
     }
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -39,7 +40,7 @@ class WaterfallVC: UICollectionViewController {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
     }
-    */
+    
 }
 
 //MARK: CHTCollectionViewDelegateWaterfallLayout
