@@ -31,7 +31,9 @@ let imagePH = UIImage(named: "imagePH")!
 
 //MARK: CoreData
 let appDelegate = UIApplication.shared.delegate as! AppDelegate
-let context = appDelegate.persistentContainer.viewContext
+let persistentContainer = appDelegate.persistentContainer
+let context = persistentContainer.viewContext //running on main queue
+let backgroundContext = persistentContainer.newBackgroundContext() // running on background queue
 
 //MARK: UI layout
 let screenRect = UIScreen.main.bounds

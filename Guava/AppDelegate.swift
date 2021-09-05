@@ -78,6 +78,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+    
+    func saveBackgroundContext(){
+        if backgroundContext.hasChanges{
+            do {
+                try backgroundContext.save()
+            } catch {
+                fatalError("fail to save data on background: \(error)")
+            }
+        }
+    }
 
 }
 

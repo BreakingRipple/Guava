@@ -37,7 +37,7 @@ extension POIVC{
             guard let POIVC = self else { return }
             
             if let location = location {
-                print("location:", location)
+//                print("location:", location)
                 self?.latitude = location.coordinate.latitude
                 self?.longitude = location.coordinate.longitude
                 
@@ -47,7 +47,7 @@ extension POIVC{
             }
             
             if let reGeocode = reGeocode {
-                print("reGeocode:", reGeocode)
+//                print("reGeocode:", reGeocode)
                 
                 //AMapLocationReGeocode:{formattedAddress:江苏省苏州市虎丘区狮山路靠近浙江大学现代远程教育苏州学习中心; country:中国;province:江苏省; city:苏州市; district:虎丘区; citycode:0512; adcode:320505; street:狮山路; number:66号; POIName:浙江大学现代远程教育苏州学习中心; AOIName:(null);}
                 guard let formattedAddress = reGeocode.formattedAddress, !formattedAddress.isEmpty else { return }

@@ -7,25 +7,37 @@
 
 extension NoteEditVC{
     func createDraftNote(){
-        let draftNote = DraftNote(context: context)
-        
-        //video
-        if isVideo {
-            draftNote.video = try? Data(contentsOf: videoURL!)
+        //running on background
+        backgroundContext.perform {
+            let draftNote = DraftNote(context: backgroundContext)
+            //video
+            if self.isVideo {
+                draftNote.video = try? Data(contentsOf: self.videoURL!)
+            }
+            draftNote.isVideo = self.isVideo
+            //photos
+            self.handlePhotos(draftNote)
+            //others
+            self.handleOthers(draftNote)
+            
+            DispatchQueue.main.async {
+                self.showTextHUD("Save draft successfully!")
+            }
         }
-        draftNote.isVideo = isVideo
-       
-        handlePhotos(draftNote)
-        handleOthers(draftNote)
     }
     
     func updateDraftNote(_ draftNote: DraftNote){
-        
-        if !isVideo{
-            handlePhotos(draftNote)
+        backgroundContext.perform {
+            if !self.isVideo{
+                self.handlePhotos(draftNote)
+            }
+            self.handleOthers(draftNote)
+            
+            DispatchQueue.main.async {
+                self.updateDraftNoteFinished?()
+            }
         }
-        handleOthers(draftNote)
-        updateDraftNoteFinished?()
+        
         navigationController?.popViewController(animated: true)
     }
 }
@@ -43,12 +55,16 @@ extension NoteEditVC{
     }
     
     private func handleOthers(_ draftNote: DraftNote){
-        draftNote.title = titleTextField.exactText
-        draftNote.text = textView.exactText
+        
+        DispatchQueue.main.async {
+            draftNote.title = self.titleTextField.exactText
+            draftNote.text = self.textView.exactText
+        }
         draftNote.channel = channel
         draftNote.subChannel = subChannel
         draftNote.poiName = poiName
         draftNote.updatedAt = Date()
-        appDelegate.saveContext()
+        
+        appDelegate.saveBackgroundContext()
     }
 }

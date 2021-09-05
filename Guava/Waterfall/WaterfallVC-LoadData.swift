@@ -15,10 +15,8 @@ extension WaterfallVC{
         //分页
 //        request.fetchOffset = 0
 //        request.fetchLimit = 20
-        
         //筛选
 //        request.predicate = NSPredicate(format: "title = %@", "iOS")
-        
         //排序
         let sortDescriptor1 = NSSortDescriptor(key: "updatedAt", ascending: false)
         let sortDescriptor2 = NSSortDescriptor(key: "title", ascending: true)
@@ -31,7 +29,15 @@ extension WaterfallVC{
         
         request.propertiesToFetch = ["coverPhoto", "title", "updatedAt", "isVideo"]
         
-        let draftNotes = try! context.fetch(request)
-        self.draftNotes = draftNotes
+        showLoadHUD()
+        backgroundContext.perform {
+            if let draftNotes = try? backgroundContext.fetch(request){
+                self.draftNotes = draftNotes
+                DispatchQueue.main.async {
+                    self.collectionView.reloadData()
+                }
+            }
+            self.hideLoadHUD()
+        }
     }
 }

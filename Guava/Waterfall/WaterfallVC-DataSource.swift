@@ -39,15 +39,21 @@ extension WaterfallVC{
 //MARK: Normal function
 extension WaterfallVC{
     private func deleteDraftNote(_ index: Int){
-        //datasource
-        let draftNote = draftNotes[index]
-        context.delete(draftNote)
-        appDelegate.saveContext()
-        
-        draftNotes.remove(at: index)
+        backgroundContext.perform {
+            //datasource
+            let draftNote = self.draftNotes[index]
+            backgroundContext.delete(draftNote)
+            appDelegate.saveBackgroundContext()
+            
+            self.draftNotes.remove(at: index)
+        }
         
         //UI
-        collectionView.reloadData()
+        DispatchQueue.main.async {
+            self.collectionView.reloadData()
+            self.showTextHUD("Delete draft successfully!")
+        }
+    
 //        collectionView.performBatchUpdates {
 //        collectionView.deleteItems(at: [IndexPath(item: index, section: 0)])
 //        }
