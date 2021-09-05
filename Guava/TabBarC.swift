@@ -32,7 +32,7 @@ class TabBarC: UITabBarController, UITabBarControllerDelegate {
             config.albumName = Bundle.main.appName
             config.startOnScreen = .library
             config.screens = [.library, .photo, .video]
-            config.showsCrop = .none
+            config.showsCrop = .rectangle(ratio: 0.8)
             config.targetImageSize = YPImageSize.original
             config.hidesBottomBar = false
             config.hidesCancelButton = false
@@ -57,19 +57,32 @@ class TabBarC: UITabBarController, UITabBarControllerDelegate {
             let picker = YPImagePicker(configuration: config)
             picker.didFinishPicking { [unowned picker] items, cancelled in
                 if cancelled {
-                    print("user clicks the Cancel button")
-                }
-                
-                for item in items {
-                    switch item {
-                    case let .photo(photo):
-                        print(photo)
-                    case .video(let video):
-                        print(video)
+                    picker.dismiss(animated: true)
+                }else{
+                        
+                    var photos: [UIImage] = []
+                    var videoURL: URL?
+                    for item in items {
+                        switch item {
+                        case let .photo(photo):
+                            photos.append(photo.image)
+                        case .video(let video):
+                            
+//                            let url = URL(fileURLWithPath: "recordedVideoRAW.mov", relativeTo: FileManager.default.temporaryDirectory)
+//                            photos.append(video.thumbnail)
+//                            videoURL = url
+                            
+                            photos.append(video.thumbnail)
+                            videoURL = video.url
+                        }
                     }
+                    
+                    let vc = self.storyboard?.instantiateViewController(identifier: kNoteEditVCID) as! NoteEditVC
+                    vc.photos = photos
+                    vc.videoURL = videoURL
+                    
+                    picker.pushViewController(vc, animated: true)
                 }
-                
-                picker.dismiss(animated: true, completion: nil)
             }
             present(picker, animated: true, completion: nil)
             

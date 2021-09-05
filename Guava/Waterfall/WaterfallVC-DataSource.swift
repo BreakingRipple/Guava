@@ -53,10 +53,15 @@ extension WaterfallVC{
             self.collectionView.reloadData()
             self.showTextHUD("Delete draft successfully!")
         }
-    
-//        collectionView.performBatchUpdates {
-//        collectionView.deleteItems(at: [IndexPath(item: index, section: 0)])
+        
+        
+//        DispatchQueue.main.async {
+//            self.collectionView.performBatchUpdates {
+//                self.collectionView.deleteItems(at: [IndexPath(item: index, section: 0)])
+//            }
+//            self.showTextHUD("Delete draft note successfully.")
 //        }
+        
     }
 }
 

@@ -64,7 +64,9 @@ class NoteEditVC: UIViewController {
     
     // need to do draft
     @IBAction func saveDraftNote(_ sender: Any) {
-        validateNote()
+        guard isValidateNote() else {
+            return
+        }
         
         if let draftNote = draftNote{
             updateDraftNote(draftNote)
@@ -75,7 +77,9 @@ class NoteEditVC: UIViewController {
     }
     
     @IBAction func postNote(_ sender: Any) {
-        validateNote()
+        guard isValidateNote() else {
+            return
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

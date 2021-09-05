@@ -7,6 +7,7 @@
 
 import UIKit
 import DateToolsSwift
+import AVFoundation
 
 extension String{
     var isBlank: Bool{
@@ -43,6 +44,25 @@ extension Date{
             return format(with: "yyyy-MM-dd")
         }else{
             return "future"
+        }
+    }
+}
+
+//给视频生成一个封面
+extension URL{
+    var thumbnail: UIImage{
+        let asset = AVAsset(url: self)
+        let assetImgGenerate = AVAssetImageGenerator(asset: asset)
+        assetImgGenerate.appliesPreferredTrackTransform = true
+        //如果视频尺寸确定的话可以用下面这句提高处理性能
+        //assetImgGenerate.maximumSize = CGSize(width, height)
+        let time = CMTimeMakeWithSeconds(1.0, preferredTimescale: 600)
+        do {
+            let img = try assetImgGenerate.copyCGImage(at: time, actualTime: nil)
+            let thumbnail = UIImage(cgImage: img)
+            return thumbnail
+        } catch {
+            return imagePH
         }
     }
 }
@@ -116,9 +136,13 @@ extension UIViewController{
     }
     
     
-    //MARK: Indicating view -- hide automatically
-    func showTextHUD(_ title: String, _ subTitle: String? = nil){
-        let hud =  MBProgressHUD.showAdded(to: view, animated: true)
+    //MARK: Reminder view -- hide automatically
+    func showTextHUD(_ title: String, _ inCurrentView: Bool = true, _ subTitle: String? = nil){
+        var viewToShow = view!
+        if !inCurrentView{
+            viewToShow = UIApplication.shared.windows.last!
+        }
+        let hud =  MBProgressHUD.showAdded(to: viewToShow, animated: true)
         hud.mode = .text //if this is not set, the view will display flower and below two line labels.
         hud.label.text = title
         hud.detailsLabel.text = subTitle

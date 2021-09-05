@@ -8,17 +8,19 @@
 import Foundation
 
 extension NoteEditVC{
-    func validateNote(){
+    func isValidateNote() -> Bool{
         
         guard !photos.isEmpty else {
             showTextHUD("At least one pohto")
-            return
+            return false
         }
         
         guard textViewIAView.currentTextCount <= kMaxNoteTextCount else {
             showTextHUD("No more than \(kMaxNoteTextCount) words.")
-            return
+            return false
         }
+        
+        return true
     }
     
     func handleTFEditChange(){

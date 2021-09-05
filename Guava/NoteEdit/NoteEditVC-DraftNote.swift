@@ -22,9 +22,10 @@ extension NoteEditVC{
             self.handleOthers(draftNote)
             
             DispatchQueue.main.async {
-                self.showTextHUD("Save draft successfully!")
+                self.showTextHUD("Save draft successfully!", false)
             }
         }
+        dismiss(animated: true)
     }
     
     func updateDraftNote(_ draftNote: DraftNote){
