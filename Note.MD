@@ -173,5 +173,19 @@
             ------------------------------------------------------------------
             //主线程异步延迟执行
             DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: <#T##() -> Void#>)
-test
+
+### create objects by coding
+        1. create a closure, set attributes
+        lazy private var loginBtn: UIButton = {
+            let btn = UIButton()
+            btn.setTitle("Login", for: .normal)
+            btn.setTitleColor(.white, for: .normal)
+            btn.backgroundColor = mainColor
+            btn.layer.cornerRadius = 22
+            btn.addTarget(self, action: #selector(localLogin), for: .touchUpInside)
+            return btn
+        }()
+        2. set constraints
+        view.addSubview(loginBtn)
+        setUI()
 

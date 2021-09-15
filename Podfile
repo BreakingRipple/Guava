@@ -16,4 +16,8 @@ target 'Guava' do
   pod 'AMapSearch'
   pod 'MJRefresh'
   pod 'DateToolsSwift'
+  pod 'JVerification'
+  pod 'Alamofire', '~> 5.4'
+  pod  'AlipaySDK-iOS'
+  pod 'LeanCloud'
 end

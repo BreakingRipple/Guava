@@ -15,6 +15,7 @@ class DraftNoteWaterfallCell: UICollectionViewCell {
     @IBOutlet weak var deleteBtn: UIButton!
     @IBOutlet weak var isVideoImageView: UIImageView!
     
+    
     var draftNote: DraftNote? {
         didSet{
             guard let draftNote = draftNote else { return}

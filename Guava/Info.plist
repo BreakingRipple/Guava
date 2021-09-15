@@ -2,16 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>you can get information near you</string>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>you can save your new photo into your library after allowing it</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>you can record your voice or video after allowing it</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>input images from photo library</string>
-	<key>NSCameraUsageDescription</key>
-	<string>open camera to make photos or videos</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
@@ -28,10 +18,31 @@
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>Guava</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>open camera to make photos or videos</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>you can get information near you</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>you can record your voice or video after allowing it</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>you can save your new photo into your library after allowing it</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>input images from photo library</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
