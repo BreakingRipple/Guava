@@ -33,6 +33,8 @@
 		2E84146126F051A6006DB877 /* APRSASigner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E84141126F051A6006DB877 /* APRSASigner.m */; };
 		2E84146226F051A6006DB877 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E84141226F051A6006DB877 /* libssl.a */; };
 		2E84146426F19FA8006DB877 /* SocialLoginVC-Apple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E84146326F19FA8006DB877 /* SocialLoginVC-Apple.swift */; };
+		2E84146726F1E75F006DB877 /* CodeLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E84146626F1E75E006DB877 /* CodeLoginVC.swift */; };
+		2E84146926F1E8CC006DB877 /* PasswordLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E84146826F1E8CC006DB877 /* PasswordLoginVC.swift */; };
 		2EC348D526D0D75700CAA637 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348D426D0D75700CAA637 /* HomeVC.swift */; };
 		2EC348D926D109D500CAA637 /* FollowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348D826D109D500CAA637 /* FollowVC.swift */; };
 		2EC348DB26D10A0500CAA637 /* DiscoveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348DA26D10A0500CAA637 /* DiscoveryVC.swift */; };
@@ -172,6 +174,8 @@
 		2E84145E26F051A6006DB877 /* lhash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lhash.h; sourceTree = "<group>"; };
 		2E84146326F19FA8006DB877 /* SocialLoginVC-Apple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SocialLoginVC-Apple.swift"; sourceTree = "<group>"; };
 		2E84146526F1A429006DB877 /* Guava.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Guava.entitlements; sourceTree = "<group>"; };
+		2E84146626F1E75E006DB877 /* CodeLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeLoginVC.swift; sourceTree = "<group>"; };
+		2E84146826F1E8CC006DB877 /* PasswordLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordLoginVC.swift; sourceTree = "<group>"; };
 		2EC348D426D0D75700CAA637 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		2EC348D826D109D500CAA637 /* FollowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowVC.swift; sourceTree = "<group>"; };
 		2EC348DA26D10A0500CAA637 /* DiscoveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryVC.swift; sourceTree = "<group>"; };
@@ -278,6 +282,8 @@
 				2E84140726F0301D006DB877 /* SocialLoginVC.swift */,
 				2E84140926F0306B006DB877 /* SocialLoginVC-Alipay.swift */,
 				2E84146326F19FA8006DB877 /* SocialLoginVC-Apple.swift */,
+				2E84146626F1E75E006DB877 /* CodeLoginVC.swift */,
+				2E84146826F1E8CC006DB877 /* PasswordLoginVC.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -657,6 +663,7 @@
 				2EC3491526DB69EC00CAA637 /* NoteEditVC-CollectionView.swift in Sources */,
 				2E84140026EB3018006DB877 /* LoginVC.swift in Sources */,
 				2EC3491D26DDC0A900CAA637 /* ChannelVC.swift in Sources */,
+				2E84146926F1E8CC006DB877 /* PasswordLoginVC.swift in Sources */,
 				2E3DCDB426E10B4400149F59 /* Guava.xcdatamodeld in Sources */,
 				2E3DCDBA26E2728100149F59 /* WaterfallVC-LoadData.swift in Sources */,
 				2E84146126F051A6006DB877 /* APRSASigner.m in Sources */,
@@ -673,6 +680,7 @@
 				2EC348DF26D1120F00CAA637 /* Constants.swift in Sources */,
 				2EC3492326DDF54900CAA637 /* POIVC.swift in Sources */,
 				2EC3492926DF3B0500CAA637 /* POIVC-Config.swift in Sources */,
+				2E84146726F1E75F006DB877 /* CodeLoginVC.swift in Sources */,
 				2E3DCDB826E236B100149F59 /* DraftNoteWaterfallCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

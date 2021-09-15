@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreData
+import LeanCloud
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -99,6 +100,17 @@ extension AppDelegate{
         
         //UI
         UINavigationBar.appearance().tintColor = mainColor
+        
+        //init LeanCloud
+        
+        do {
+            try LCApplication.default.set(
+                id: kLCAppID,
+                key: kLCAppKey,
+                serverURL: kLCServerURL)
+        } catch {
+            print(error)
+        }
     }
     
    

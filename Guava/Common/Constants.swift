@@ -27,6 +27,7 @@ let kDraftNoteWaterfallCellID = "DraftNoteWaterfallCellID"
 
 //MARK: resource file related
 let mainColor = UIColor(named: "main")!
+let mainLightColor = UIColor(named: "main-light")
 let blueColor = UIColor(named: "blue")!
 let imagePH = UIImage(named: "imagePH")!
 
@@ -85,8 +86,13 @@ let kPublicKey = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDQnq6Pi0Gw5eDavGCqlI22YP
 let kAliPayAppID = "2021002179620483"
 let kAliPayPID = "2088212904324795"
 let kAliPayPrivateKey = "MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDyDxvBx3VajnvxFCkbvmwh4b81RE6x2qwRfuVCSdlNAPuXbkXPEriKOh1XnWKjFDp/5MYomycbLL30j8OiFH4nNGhCkgKwDxOcDC3po2SNCQrtmukgyC7PEVGkfMN1mnCt/3a8IkS14H60dL3MpkWrTPFBbJDi2TGon54lJUTPGHdVEquthZ4/8Owh5twWBNeNgW95r+B5mbkVfRIETmyqwe73d+vu6/A0hXs+uHWldQt++DoCO6ZfN6715HriQGaCnY4bhJUzAB1KN0xNGe9QDC5pEVHP4J9hCVtIqPAYK5vzWqw9isSdhyJIn/B3A66zmI1jHRb/TxvdjhHCp96hAgMBAAECggEADsrXkmcDB+6vKlNmE7j2WLe3/KRY/stzOnp7vipPKkKGHYHyqC3nsyLMCj+m+HpS/N/ZMEATCrkYPqrOdMg10WWFfZP4sBOryhyAbce7bFcCIPUXjBZPrf3L9HZfZ39xpWB4PBUIB+lZNOPxeWEr3sUL9UiSLhrByyE+A90cMF+a9Qzwwr6h8j3WCI+bacUwTLIcwDzatLyTT/JuLdR1J8bUuf6XaI7mmRBYEIgKeC93AsqSPef2tlFfB78Sruyc4IZugoIvbJAk18nvDok8U6kboHvg+KC8pqbbKdFVJIm4O6OVMzm4xXnVTDS3mHT3VyaFprLXUXkdCCVb8h3aZQKBgQD9sFV+d3OZdK7YWQsP9l2L0Jjs6QF3g8bVJ+9wLiRzfHOUfftgXHzsqVcgl8VaSKOwoNvbAFTJWr7drKlt/UwuGGY3YyuTbKjRePuvVNLCFJeuoBRqvm6PFpbUZLR0v8/Pu35QETTrxWxbdbW2QwFDAdWd6QnhGFkJPll7fRI00wKBgQD0Q6af98l9OjzBHEwbS+ligDjD3n9N8rzVtEwbI+n9gzFdjcrzDJCwk+C/NNhzv+Xst4egfrmBJXMK3txr0N04yiP3/o0rh9rRWcfMwIVhNLc2n2hSvbqYWhNMO47Jl3TeefdH291r+cB41r/MDsWlR2g+2fzWYq7VXq9fJGxGOwKBgBgI2cC2jnQuctY6cWrcu3YgmCxx0trA2FifhPbK2Fc8pjKeUO+LM6a0UHXdCyyHj0KPquSvvlipSUX1MsQh6FLBqwV6VsmL1N6rqKSu05zhmJFJx0Vpr03NJRMQS2x4M7cJm2j4iFwCA0cS+tk+teLkTJm+V1pFFUJj7tRdQBlTAoGAZhX4B5dJsHqsdZDcBfR9/9rS3pmY3vz6Ct6liBpEat1vvkfKcDXqKsJDBeaSKB4le/9gQaV05hK+t+ZYfP731go1aioK2gyXWTOKm3pCxFOB1uRcd2gwGghbVFr33CzefTTAMlojekMRO++UjTYHSIJFgS8dyoPHygkehkb0sY0CgYEApOMlYE8CdnXAZlqaSCuOJN/HMOdpm96zqyyFt6EC6W3VOkNSjjL14YCIBxSHZyd9Lb4Nnz7rct7C0DqBUzQMVFfZqTjMAqLHpo677QSwKCv4QrIZlYPlpIOl5zRVVTX8bLbOkcrgitlnJx0+LAv7attactpFd9aKZN2/dzb3RKU="
-
-
-
 let kAppScheme = "Guava"
 
+//LeanCloud
+let kLCAppID = "XSCCpvw8BKsgs0EhzsAVwnoM-gzGzoHsz"
+let kLCAppKey = "GOTGo06DMTXgjK7o1YhhYJCH"
+let kLCServerURL = "https://xsccpvw8.lc-cn-n1-shared.com"
+
+// regualr expression
+let kChinaPhoneRegEx = "^1\\d{10}$"
+let kAuthCodeRegEx = "^\\d{6}$"

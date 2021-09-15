@@ -7,11 +7,14 @@
 
 import UIKit
 import AuthenticationServices
+import LeanCloud
+
 
 class SocialLoginVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Do any additional setup after loading the view.
     }

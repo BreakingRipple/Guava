@@ -13,6 +13,29 @@ extension String{
     var isBlank: Bool{
         self.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
     }
+    
+    var isChinaMainlandPhoneNum: Bool{
+        Int(self) != nil && NSRegularExpression(kChinaPhoneRegEx).matches(self)
+    }
+    
+    var isAuthCode: Bool{
+        Int(self) != nil && NSRegularExpression(kAuthCodeRegEx).matches(self)
+    }
+}
+
+extension NSRegularExpression{
+    convenience init(_ pattern: String){
+        do {
+            try self.init(pattern: pattern)
+        } catch {
+            fatalError("invalid RecgEx")
+        }
+    }
+    
+    func matches(_ string: String) -> Bool {
+        let range = NSRange(location: 0, length: string.utf16.count)
+        return firstMatch(in: string, options: [], range: range) != nil
+    }
 }
 
 extension Optional where Wrapped == String{
@@ -64,6 +87,18 @@ extension URL{
         } catch {
             return imagePH
         }
+    }
+}
+
+extension UIButton{
+    func setToEnable(){
+        isEnabled = true
+        backgroundColor = mainColor
+    }
+    
+    func setToDisabled(){
+        isEnabled = false
+        backgroundColor = mainLightColor
     }
 }
 
