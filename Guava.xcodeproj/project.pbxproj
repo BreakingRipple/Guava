@@ -25,7 +25,7 @@
 		2E3DCDC626E3B89600149F59 /* NoteEditVC-DraftNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3DCDC526E3B89600149F59 /* NoteEditVC-DraftNote.swift */; };
 		2E3DCDC826E3D32C00149F59 /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3DCDC726E3D32C00149F59 /* MeVC.swift */; };
 		2E84140026EB3018006DB877 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8413FF26EB3018006DB877 /* LoginVC.swift */; };
-		2E84140326EB3284006DB877 /* Login-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E84140226EB3284006DB877 /* Login-Extensions.swift */; };
+		2E84140326EB3284006DB877 /* LocalLogin-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E84140226EB3284006DB877 /* LocalLogin-Extensions.swift */; };
 		2E84140826F0301E006DB877 /* SocialLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E84140726F0301D006DB877 /* SocialLoginVC.swift */; };
 		2E84140A26F0306B006DB877 /* SocialLoginVC-Alipay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E84140926F0306B006DB877 /* SocialLoginVC-Alipay.swift */; };
 		2E84145F26F051A6006DB877 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E84140C26F051A6006DB877 /* libcrypto.a */; };
@@ -35,10 +35,13 @@
 		2E84146426F19FA8006DB877 /* SocialLoginVC-Apple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E84146326F19FA8006DB877 /* SocialLoginVC-Apple.swift */; };
 		2E84146726F1E75F006DB877 /* CodeLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E84146626F1E75E006DB877 /* CodeLoginVC.swift */; };
 		2E84146926F1E8CC006DB877 /* PasswordLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E84146826F1E8CC006DB877 /* PasswordLoginVC.swift */; };
+		2EAC7FB426F3091A00E8DAAC /* LC-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAC7FB326F3091A00E8DAAC /* LC-Extensions.swift */; };
+		2EAC7FB626F319ED00E8DAAC /* Login-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAC7FB526F319ED00E8DAAC /* Login-Extensions.swift */; };
+		2EAC7FB826F3280500E8DAAC /* LoginAndMeParentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAC7FB726F3280500E8DAAC /* LoginAndMeParentVC.swift */; };
 		2EC348D526D0D75700CAA637 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348D426D0D75700CAA637 /* HomeVC.swift */; };
 		2EC348D926D109D500CAA637 /* FollowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348D826D109D500CAA637 /* FollowVC.swift */; };
 		2EC348DB26D10A0500CAA637 /* DiscoveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348DA26D10A0500CAA637 /* DiscoveryVC.swift */; };
-		2EC348DD26D10A3C00CAA637 /* NearByVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348DC26D10A3C00CAA637 /* NearByVC.swift */; };
+		2EC348DD26D10A3C00CAA637 /* NearByVC-GCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348DC26D10A3C00CAA637 /* NearByVC-GCD.swift */; };
 		2EC348DF26D1120F00CAA637 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348DE26D1120F00CAA637 /* Constants.swift */; };
 		2EC348E226D2242F00CAA637 /* WaterfallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348E126D2242F00CAA637 /* WaterfallVC.swift */; };
 		2EC348E426D22C1000CAA637 /* WaterfallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348E326D22C1000CAA637 /* WaterfallCell.swift */; };
@@ -88,7 +91,7 @@
 		2E3DCDC526E3B89600149F59 /* NoteEditVC-DraftNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-DraftNote.swift"; sourceTree = "<group>"; };
 		2E3DCDC726E3D32C00149F59 /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		2E8413FF26EB3018006DB877 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
-		2E84140226EB3284006DB877 /* Login-Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Login-Extensions.swift"; sourceTree = "<group>"; };
+		2E84140226EB3284006DB877 /* LocalLogin-Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalLogin-Extensions.swift"; sourceTree = "<group>"; };
 		2E84140726F0301D006DB877 /* SocialLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginVC.swift; sourceTree = "<group>"; };
 		2E84140926F0306B006DB877 /* SocialLoginVC-Alipay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SocialLoginVC-Alipay.swift"; sourceTree = "<group>"; };
 		2E84140C26F051A6006DB877 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
@@ -176,10 +179,13 @@
 		2E84146526F1A429006DB877 /* Guava.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Guava.entitlements; sourceTree = "<group>"; };
 		2E84146626F1E75E006DB877 /* CodeLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeLoginVC.swift; sourceTree = "<group>"; };
 		2E84146826F1E8CC006DB877 /* PasswordLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordLoginVC.swift; sourceTree = "<group>"; };
+		2EAC7FB326F3091A00E8DAAC /* LC-Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LC-Extensions.swift"; sourceTree = "<group>"; };
+		2EAC7FB526F319ED00E8DAAC /* Login-Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Login-Extensions.swift"; sourceTree = "<group>"; };
+		2EAC7FB726F3280500E8DAAC /* LoginAndMeParentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAndMeParentVC.swift; sourceTree = "<group>"; };
 		2EC348D426D0D75700CAA637 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		2EC348D826D109D500CAA637 /* FollowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowVC.swift; sourceTree = "<group>"; };
 		2EC348DA26D10A0500CAA637 /* DiscoveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryVC.swift; sourceTree = "<group>"; };
-		2EC348DC26D10A3C00CAA637 /* NearByVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByVC.swift; sourceTree = "<group>"; };
+		2EC348DC26D10A3C00CAA637 /* NearByVC-GCD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NearByVC-GCD.swift"; sourceTree = "<group>"; };
 		2EC348DE26D1120F00CAA637 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2EC348E126D2242F00CAA637 /* WaterfallVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallVC.swift; sourceTree = "<group>"; };
 		2EC348E326D22C1000CAA637 /* WaterfallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallCell.swift; sourceTree = "<group>"; };
@@ -257,7 +263,7 @@
 				2E17C5AE26CF956200AE335F /* SceneDelegate.swift */,
 				2E17C5B226CF956200AE335F /* Main.storyboard */,
 				2EC348FE26D2AF6700CAA637 /* TabBarC.swift */,
-				2E3DCDC726E3D32C00149F59 /* MeVC.swift */,
+				2EAC7FB926F3281600E8DAAC /* Me */,
 				2E84140126EB301E006DB877 /* Login */,
 				2EC3490E26D933D300CAA637 /* NoteEdit */,
 				2EC348E026D1139200CAA637 /* Home */,
@@ -291,7 +297,9 @@
 		2E84140626EEE826006DB877 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				2E84140226EB3284006DB877 /* Login-Extensions.swift */,
+				2E84140226EB3284006DB877 /* LocalLogin-Extensions.swift */,
+				2EAC7FB526F319ED00E8DAAC /* Login-Extensions.swift */,
+				2EAC7FB326F3091A00E8DAAC /* LC-Extensions.swift */,
 				2EC3490226D3723E00CAA637 /* System-Extensions.swift */,
 			);
 			path = Extensions;
@@ -401,13 +409,22 @@
 			path = openssl;
 			sourceTree = "<group>";
 		};
+		2EAC7FB926F3281600E8DAAC /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				2EAC7FB726F3280500E8DAAC /* LoginAndMeParentVC.swift */,
+				2E3DCDC726E3D32C00149F59 /* MeVC.swift */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
 		2EC348E026D1139200CAA637 /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				2EC348D426D0D75700CAA637 /* HomeVC.swift */,
 				2EC348D826D109D500CAA637 /* FollowVC.swift */,
 				2EC348DA26D10A0500CAA637 /* DiscoveryVC.swift */,
-				2EC348DC26D10A3C00CAA637 /* NearByVC.swift */,
+				2EC348DC26D10A3C00CAA637 /* NearByVC-GCD.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -643,7 +660,8 @@
 				2EC3492126DDCF0700CAA637 /* Protocols.swift in Sources */,
 				2EC3492B26DF3BA900CAA637 /* POIVC-Location.swift in Sources */,
 				2EC3491326DA837B00CAA637 /* NoteEditVC-DragDrop.swift in Sources */,
-				2EC348DD26D10A3C00CAA637 /* NearByVC.swift in Sources */,
+				2EC348DD26D10A3C00CAA637 /* NearByVC-GCD.swift in Sources */,
+				2EAC7FB426F3091A00E8DAAC /* LC-Extensions.swift in Sources */,
 				2EC3490A26D7AE4600CAA637 /* PhotoCell.swift in Sources */,
 				2EC348FF26D2AF6700CAA637 /* TabBarC.swift in Sources */,
 				2EC348E226D2242F00CAA637 /* WaterfallVC.swift in Sources */,
@@ -655,8 +673,9 @@
 				2EC3490826D6863E00CAA637 /* NoteEditVC.swift in Sources */,
 				2E84140A26F0306B006DB877 /* SocialLoginVC-Alipay.swift in Sources */,
 				2E17C5AD26CF956200AE335F /* AppDelegate.swift in Sources */,
-				2E84140326EB3284006DB877 /* Login-Extensions.swift in Sources */,
+				2E84140326EB3284006DB877 /* LocalLogin-Extensions.swift in Sources */,
 				2E3DCDC826E3D32C00149F59 /* MeVC.swift in Sources */,
+				2EAC7FB826F3280500E8DAAC /* LoginAndMeParentVC.swift in Sources */,
 				2EC348D526D0D75700CAA637 /* HomeVC.swift in Sources */,
 				2E3DCDC426E3A07100149F59 /* NoteEditVC-UI.swift in Sources */,
 				2EC3490126D2B19200CAA637 /* PostVC.swift in Sources */,
@@ -674,6 +693,7 @@
 				2EC3490326D3723E00CAA637 /* System-Extensions.swift in Sources */,
 				2E17C5AF26CF956200AE335F /* SceneDelegate.swift in Sources */,
 				2E84146426F19FA8006DB877 /* SocialLoginVC-Apple.swift in Sources */,
+				2EAC7FB626F319ED00E8DAAC /* Login-Extensions.swift in Sources */,
 				2EC3491F26DDC23B00CAA637 /* ChannelTableVC.swift in Sources */,
 				2E3DCDBC26E272F300149F59 /* WaterfallVC-Config.swift in Sources */,
 				2EC348DB26D10A0500CAA637 /* DiscoveryVC.swift in Sources */,

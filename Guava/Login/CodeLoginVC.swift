@@ -11,7 +11,7 @@ import LeanCloud
 private let totalTime = 6
 
 class CodeLoginVC: UIViewController {
-
+    
     private var timeRemain = totalTime
     
     @IBOutlet weak var phoneNumTF: UITextField!
@@ -26,6 +26,16 @@ class CodeLoginVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        do {
+            let testObject = LCObject(className: "TestObject")
+            let result = testObject.save()
+            if let error = result.error{
+                print(error)
+            }
+        } catch {
+            print(error)
+        }
         
         loginBtn.setToDisabled()
         hideKeyboardWhenTappedAround()
@@ -63,29 +73,47 @@ class CodeLoginVC: UIViewController {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(changeAuthCodeBtnText), userInfo: nil, repeats: true)
         
         let variables: LCDictionary = ["name": LCString("石头记Guava"), "ttl": LCNumber(5)]
-
+        
         LCSMSClient.requestShortMessage(
             mobilePhoneNumber: phoneNumStr,
             templateName: "Order_Notice",
             signatureName: "sign_BuyBuyBuy",
             variables: variables)
         { result in
-//            switch result {
-//            case .success:
-//                break
-//            case .failure(error: let error):
-//                print(error)
-//            }
+            //            switch result {
+            //            case .success:
+            //                break
+            //            case .failure(error: let error):
+            //                print(error)
+            //            }
             if case let .failure(error: error) = result{
-                print(error.reason)
+                print(error.reason  ?? "unknown error, fail to get code")
             }
         }
         
     }
     
+    //test phone number: 18518018616  code: 313252
     @IBAction func login(_ sender: UIButton) {
+        view.endEditing(true)
+        
+        showLoadHUD()
+        LCUser.signUpOrLogIn(mobilePhoneNumber: phoneNumStr, verificationCode: authCodeStr, completion: { result in
+            
+            switch result {
+            case let .success(object: user):
+                //                print(user)
+                let randomNickName = "stone\(String.randomString(6))"
+                self.configAfterLogin(user, randomNickName)
+            case let .failure(error: error):
+                self.hideLoadHUD()
+                DispatchQueue.main.async {
+                    self.showTextHUD("fail to login", true, error.reason)
+                }
+            }
+        })
     }
-
+    
 }
 
 extension CodeLoginVC: UITextFieldDelegate{
@@ -93,7 +121,7 @@ extension CodeLoginVC: UITextFieldDelegate{
         
         let limit = textField == phoneNumTF ? 11 : 6
         let isExceed = range.location >= limit || (textField.unwrapperText.count + string.count) > limit
-       
+        
         if isExceed{
             showTextHUD("no more than \(limit) digits")
         }
