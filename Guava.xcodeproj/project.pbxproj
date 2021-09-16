@@ -38,8 +38,8 @@
 		2EAC7FB426F3091A00E8DAAC /* LC-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAC7FB326F3091A00E8DAAC /* LC-Extensions.swift */; };
 		2EAC7FB626F319ED00E8DAAC /* Login-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAC7FB526F319ED00E8DAAC /* Login-Extensions.swift */; };
 		2EAC7FB826F3280500E8DAAC /* LoginAndMeParentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAC7FB726F3280500E8DAAC /* LoginAndMeParentVC.swift */; };
-		2EAC7FBB26F38F7300E8DAAC /* Constants-Important.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAC7FBA26F38F7300E8DAAC /* Constants-Important.swift */; };
 		2EAC7FBD26F3911300E8DAAC /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 2EAC7FBC26F3911300E8DAAC /* .gitignore */; };
+		2EBE5CFA26F39AEE008B9092 /* Privacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBE5CF926F39AEE008B9092 /* Privacy.swift */; };
 		2EC348D526D0D75700CAA637 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348D426D0D75700CAA637 /* HomeVC.swift */; };
 		2EC348D926D109D500CAA637 /* FollowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348D826D109D500CAA637 /* FollowVC.swift */; };
 		2EC348DB26D10A0500CAA637 /* DiscoveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348DA26D10A0500CAA637 /* DiscoveryVC.swift */; };
@@ -184,8 +184,8 @@
 		2EAC7FB326F3091A00E8DAAC /* LC-Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LC-Extensions.swift"; sourceTree = "<group>"; };
 		2EAC7FB526F319ED00E8DAAC /* Login-Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Login-Extensions.swift"; sourceTree = "<group>"; };
 		2EAC7FB726F3280500E8DAAC /* LoginAndMeParentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAndMeParentVC.swift; sourceTree = "<group>"; };
-		2EAC7FBA26F38F7300E8DAAC /* Constants-Important.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants-Important.swift"; sourceTree = "<group>"; };
 		2EAC7FBC26F3911300E8DAAC /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		2EBE5CF926F39AEE008B9092 /* Privacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Privacy.swift; sourceTree = "<group>"; };
 		2EC348D426D0D75700CAA637 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		2EC348D826D109D500CAA637 /* FollowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowVC.swift; sourceTree = "<group>"; };
 		2EC348DA26D10A0500CAA637 /* DiscoveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryVC.swift; sourceTree = "<group>"; };
@@ -453,7 +453,7 @@
 			children = (
 				2E84140626EEE826006DB877 /* Extensions */,
 				2EC348DE26D1120F00CAA637 /* Constants.swift */,
-				2EAC7FBA26F38F7300E8DAAC /* Constants-Important.swift */,
+				2EBE5CF926F39AEE008B9092 /* Privacy.swift */,
 				2EC3492026DDCF0700CAA637 /* Protocols.swift */,
 			);
 			path = Common;
@@ -672,7 +672,6 @@
 				2EC3490A26D7AE4600CAA637 /* PhotoCell.swift in Sources */,
 				2EC348FF26D2AF6700CAA637 /* TabBarC.swift in Sources */,
 				2EC348E226D2242F00CAA637 /* WaterfallVC.swift in Sources */,
-				2EAC7FBB26F38F7300E8DAAC /* Constants-Important.swift in Sources */,
 				2EC3492D26DFD36E00CAA637 /* POIVC-KeywordsSearch.swift in Sources */,
 				2E3DCDBE26E329DE00149F59 /* WaterfallVC-DataSource.swift in Sources */,
 				2EC348E426D22C1000CAA637 /* WaterfallCell.swift in Sources */,
@@ -707,6 +706,7 @@
 				2EC348DB26D10A0500CAA637 /* DiscoveryVC.swift in Sources */,
 				2EC348DF26D1120F00CAA637 /* Constants.swift in Sources */,
 				2EC3492326DDF54900CAA637 /* POIVC.swift in Sources */,
+				2EBE5CFA26F39AEE008B9092 /* Privacy.swift in Sources */,
 				2EC3492926DF3B0500CAA637 /* POIVC-Config.swift in Sources */,
 				2E84146726F1E75F006DB877 /* CodeLoginVC.swift in Sources */,
 				2E3DCDB826E236B100149F59 /* DraftNoteWaterfallCell.swift in Sources */,
