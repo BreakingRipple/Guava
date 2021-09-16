@@ -104,3 +104,6 @@ let kNickNameCol = "nickName"
 let kAvatarCol = "avatar"
 let kGenderCol = "gender"
 let kIntroCol = "intro"
+
+
+let test = ""
