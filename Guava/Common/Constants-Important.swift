@@ -30,3 +30,6 @@ let kPublicKey = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDQnq6Pi0Gw5eDavGCqlI22YP
 
 //GaoDe
 let kAMapAPIKey = "c837c7357b4fab67947e024fa95dc8ab"
+
+
+let test = ""
