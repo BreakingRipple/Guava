@@ -39,7 +39,7 @@
 		2EAC7FB626F319ED00E8DAAC /* Login-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAC7FB526F319ED00E8DAAC /* Login-Extensions.swift */; };
 		2EAC7FB826F3280500E8DAAC /* LoginAndMeParentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAC7FB726F3280500E8DAAC /* LoginAndMeParentVC.swift */; };
 		2EAC7FBD26F3911300E8DAAC /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 2EAC7FBC26F3911300E8DAAC /* .gitignore */; };
-		2EBE5CFC26F39C22008B9092 /* PrivacyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBE5CFB26F39C22008B9092 /* PrivacyInfo.swift */; };
+		2EBE5CFE26F420DC008B9092 /* temporaty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBE5CFD26F420DC008B9092 /* temporaty.swift */; };
 		2EC348D526D0D75700CAA637 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348D426D0D75700CAA637 /* HomeVC.swift */; };
 		2EC348D926D109D500CAA637 /* FollowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348D826D109D500CAA637 /* FollowVC.swift */; };
 		2EC348DB26D10A0500CAA637 /* DiscoveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348DA26D10A0500CAA637 /* DiscoveryVC.swift */; };
@@ -185,7 +185,7 @@
 		2EAC7FB526F319ED00E8DAAC /* Login-Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Login-Extensions.swift"; sourceTree = "<group>"; };
 		2EAC7FB726F3280500E8DAAC /* LoginAndMeParentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAndMeParentVC.swift; sourceTree = "<group>"; };
 		2EAC7FBC26F3911300E8DAAC /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		2EBE5CFB26F39C22008B9092 /* PrivacyInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyInfo.swift; sourceTree = "<group>"; };
+		2EBE5CFD26F420DC008B9092 /* temporaty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = temporaty.swift; sourceTree = "<group>"; };
 		2EC348D426D0D75700CAA637 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		2EC348D826D109D500CAA637 /* FollowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowVC.swift; sourceTree = "<group>"; };
 		2EC348DA26D10A0500CAA637 /* DiscoveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryVC.swift; sourceTree = "<group>"; };
@@ -453,7 +453,7 @@
 			children = (
 				2E84140626EEE826006DB877 /* Extensions */,
 				2EC348DE26D1120F00CAA637 /* Constants.swift */,
-				2EBE5CFB26F39C22008B9092 /* PrivacyInfo.swift */,
+				2EBE5CFD26F420DC008B9092 /* temporaty.swift */,
 				2EC3492026DDCF0700CAA637 /* Protocols.swift */,
 			);
 			path = Common;
@@ -702,9 +702,9 @@
 				2E84146426F19FA8006DB877 /* SocialLoginVC-Apple.swift in Sources */,
 				2EAC7FB626F319ED00E8DAAC /* Login-Extensions.swift in Sources */,
 				2EC3491F26DDC23B00CAA637 /* ChannelTableVC.swift in Sources */,
-				2EBE5CFC26F39C22008B9092 /* PrivacyInfo.swift in Sources */,
 				2E3DCDBC26E272F300149F59 /* WaterfallVC-Config.swift in Sources */,
 				2EC348DB26D10A0500CAA637 /* DiscoveryVC.swift in Sources */,
+				2EBE5CFE26F420DC008B9092 /* temporaty.swift in Sources */,
 				2EC348DF26D1120F00CAA637 /* Constants.swift in Sources */,
 				2EC3492326DDF54900CAA637 /* POIVC.swift in Sources */,
 				2EC3492926DF3B0500CAA637 /* POIVC-Config.swift in Sources */,
