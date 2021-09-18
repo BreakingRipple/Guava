@@ -40,6 +40,7 @@
 		2EAC7FB826F3280500E8DAAC /* LoginAndMeParentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAC7FB726F3280500E8DAAC /* LoginAndMeParentVC.swift */; };
 		2EAC7FBD26F3911300E8DAAC /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 2EAC7FBC26F3911300E8DAAC /* .gitignore */; };
 		2EBE5CFE26F420DC008B9092 /* temporaty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBE5CFD26F420DC008B9092 /* temporaty.swift */; };
+		2EBE5D0026F579FE008B9092 /* NoteEditVC-Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBE5CFF26F579FE008B9092 /* NoteEditVC-Note.swift */; };
 		2EC348D526D0D75700CAA637 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348D426D0D75700CAA637 /* HomeVC.swift */; };
 		2EC348D926D109D500CAA637 /* FollowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348D826D109D500CAA637 /* FollowVC.swift */; };
 		2EC348DB26D10A0500CAA637 /* DiscoveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC348DA26D10A0500CAA637 /* DiscoveryVC.swift */; };
@@ -186,6 +187,7 @@
 		2EAC7FB726F3280500E8DAAC /* LoginAndMeParentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAndMeParentVC.swift; sourceTree = "<group>"; };
 		2EAC7FBC26F3911300E8DAAC /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		2EBE5CFD26F420DC008B9092 /* temporaty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = temporaty.swift; sourceTree = "<group>"; };
+		2EBE5CFF26F579FE008B9092 /* NoteEditVC-Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-Note.swift"; sourceTree = "<group>"; };
 		2EC348D426D0D75700CAA637 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		2EC348D826D109D500CAA637 /* FollowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowVC.swift; sourceTree = "<group>"; };
 		2EC348DA26D10A0500CAA637 /* DiscoveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryVC.swift; sourceTree = "<group>"; };
@@ -488,6 +490,7 @@
 				2EC3491426DB69EC00CAA637 /* NoteEditVC-CollectionView.swift */,
 				2EC3491226DA837B00CAA637 /* NoteEditVC-DragDrop.swift */,
 				2E3DCDC526E3B89600149F59 /* NoteEditVC-DraftNote.swift */,
+				2EBE5CFF26F579FE008B9092 /* NoteEditVC-Note.swift */,
 				2E3DCDC126E39EEB00149F59 /* NoteEditVC-Helper.swift */,
 				2EC3490926D7AE4600CAA637 /* PhotoCell.swift */,
 				2EC3490C26D9040800CAA637 /* PhotoFooter.swift */,
@@ -695,6 +698,7 @@
 				2E84146126F051A6006DB877 /* APRSASigner.m in Sources */,
 				2E3DCDC026E33EA000149F59 /* WaterfallVC-Delegate.swift in Sources */,
 				2EC3491726DCB1F000CAA637 /* NoteEditVC-Config.swift in Sources */,
+				2EBE5D0026F579FE008B9092 /* NoteEditVC-Note.swift in Sources */,
 				2EC348D926D109D500CAA637 /* FollowVC.swift in Sources */,
 				2E84146026F051A6006DB877 /* openssl_wrapper.m in Sources */,
 				2EC3490326D3723E00CAA637 /* System-Extensions.swift in Sources */,

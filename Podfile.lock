@@ -8,6 +8,7 @@ PODS:
     - AMapFoundation (~> 1.6.6)
   - CHTCollectionViewWaterfallLayout/Swift (0.9.8)
   - DateToolsSwift (5.0.0)
+  - DynamicBlurView (4.1.0)
   - GRDB.swift (5.11.0):
     - GRDB.swift/standard (= 5.11.0)
   - GRDB.swift/standard (5.11.0)
@@ -25,6 +26,8 @@ PODS:
     - SwiftProtobuf (~> 1.17)
   - MBProgressHUD (1.2.0)
   - MJRefresh (3.7.2)
+  - PopupDialog (1.1.1):
+    - DynamicBlurView (~> 4.0)
   - PryntTrimmerView (4.0.2)
   - SKPhotoBrowser (7.0.0)
   - SteviaLayout (4.7.3)
@@ -46,6 +49,7 @@ DEPENDENCIES:
   - LeanCloud
   - MBProgressHUD (~> 1.2.0)
   - MJRefresh
+  - PopupDialog (~> 1.1)
   - SKPhotoBrowser
   - XLPagerTabStrip (~> 9.0)
   - YPImagePicker
@@ -59,6 +63,7 @@ SPEC REPOS:
     - AMapSearch
     - CHTCollectionViewWaterfallLayout
     - DateToolsSwift
+    - DynamicBlurView
     - GRDB.swift
     - JCore
     - JVerification
@@ -66,6 +71,7 @@ SPEC REPOS:
     - LeanCloud
     - MBProgressHUD
     - MJRefresh
+    - PopupDialog
     - PryntTrimmerView
     - SKPhotoBrowser
     - SteviaLayout
@@ -81,6 +87,7 @@ SPEC CHECKSUMS:
   AMapSearch: 94cff5f6ab7233c1639111e486861ac2acea6d4b
   CHTCollectionViewWaterfallLayout: 5f241d2480ab4939aa0d1ad4981de9eef1fbe60d
   DateToolsSwift: 4207ada6ad615d8dc076323d27037c94916dbfa6
+  DynamicBlurView: 58e18fae80bb614e34681a4486870e7d257b62e8
   GRDB.swift: 9a33d9680cd3c870c82f48a6cbc73d3cfbb235eb
   JCore: 9d5bda3a172c65bbe14f2806ab0f6246f8a06065
   JVerification: 551b667c3b337d37e475c10f377e5821d172a9f6
@@ -88,6 +95,7 @@ SPEC CHECKSUMS:
   LeanCloud: ef37ccb4eb5701792624552c449cb2a87abdded5
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJRefresh: 30997d30b347c8e9508a4db11e3a690da0c9b85a
+  PopupDialog: 720c92befd8bc23c13442254945213db5612f149
   PryntTrimmerView: 6a43cc90df5d99addeabd33d4ba09b1365322130
   SKPhotoBrowser: 6aaa8f232752e87c7e76bace183bead0a137097d
   SteviaLayout: c2ecdcff57d44e38fd2f65e54ad52aeae28ca0c4
@@ -95,6 +103,6 @@ SPEC CHECKSUMS:
   XLPagerTabStrip: 61c57fd61f611ee5f01ff1495ad6fbee8bf496c5
   YPImagePicker: 6f410f475bd22fa8cd430495b54d4b2f15865c2d
 
-PODFILE CHECKSUM: 51a077dc3c8ed7e80c0cc566d23a3e0710aa4146
+PODFILE CHECKSUM: 3f43e34763a535337cce2a55ec58014d4234e0e8
 
 COCOAPODS: 1.10.2

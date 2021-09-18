@@ -15,8 +15,9 @@ let kWaterfallVCID = "WaterfallVCID"
 let kNoteEditVCID = "NoteEditVCID"
 let kChannelTableVCID = "ChannelTableVCID"
 let kLoginNavID = "LoginNavID"
-let kLoginVCID = "loginVCID"
-let kMeVCID = "meVCID"
+let kLoginVCID = "LoginVCID"
+let kMeVCID = "MeVCID"
+let kDraftNotesNavID = "DraftNotesNavID"
 
 
 //MARK: CellID
@@ -86,10 +87,30 @@ let kChinaPhoneRegEx = "^1\\d{10}$"
 let kAuthCodeRegEx = "^\\d{6}$"
 
 //MARK: LeanCloud
+//table
+let kNoteTable = "Note"
+
 //User table
 let kNickNameCol = "nickName"
 let kAvatarCol = "avatar"
 let kGenderCol = "gender"
 let kIntroCol = "intro"
 
+//Note Table
+let kCoverPhotoCol = "coverPhoto"
+let kPhotosCol = "photos"
+let kVideoCol = "video"
+let kTitleCol = "title"
+let kTextCol = "text"
+let kChannelCol = "channel"
+let kSubChannelCol = "subChannel"
+let kPOINameCol = "poiName"
+let kIsVideoCol = "isVideo"
 
+//MARK: golbal function
+func largeIcon(_ iconName: String, with color: UIColor = .label) -> UIImage{
+    let config = UIImage.SymbolConfiguration(scale: .large)
+    let icon = UIImage(systemName: iconName, withConfiguration: config)!
+    
+    return icon.withTintColor(color)
+}

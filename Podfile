@@ -20,4 +20,5 @@ target 'Guava' do
   pod 'Alamofire', '~> 5.4'
   pod  'AlipaySDK-iOS'
   pod 'LeanCloud'
+  pod 'PopupDialog', '~> 1.1'
 end

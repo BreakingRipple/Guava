@@ -188,4 +188,8 @@
         2. set constraints
         view.addSubview(loginBtn)
         setUI()
-
+        
+        
+### PopupDialog
+        https://github.com/Orderella/PopupDialog
+        https://github.com/huri000/SwiftEntryKit

@@ -31,7 +31,12 @@ class WaterfallVC: UICollectionViewController {
 //        //Register cell classes
 //        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
     }
-
+    
+    
+    @IBAction func dismissDraftNotesVC(_ sender: Any) {
+        dismiss(animated: true)
+    }
+    
     
     // MARK: - Navigation
 

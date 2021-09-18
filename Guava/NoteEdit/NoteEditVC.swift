@@ -12,10 +12,10 @@ class NoteEditVC: UIViewController {
     var draftNote: DraftNote?
     
     var updateDraftNoteFinished: (() -> ())?
+    var postDraftNoteFinished: (() -> ())?
     
-    var photos = [
-        UIImage(named: "3")!, UIImage(named: "4")!, UIImage(named: "5")!, UIImage(named: "6")!, UIImage(named: "25")!
-    ]
+//    var photos = [ UIImage(named: "3")!, UIImage(named: "4")!, UIImage(named: "5")!, UIImage(named: "6")!, UIImage(named: "25")! ]
+    var photos = [UIImage]()
     
 //    var videoURL: URL? = Bundle.main.url(forResource: "TV", withExtension: "mp4")
     var videoURL: URL?
@@ -77,8 +77,12 @@ class NoteEditVC: UIViewController {
     }
     
     @IBAction func postNote(_ sender: Any) {
-        guard isValidateNote() else {
-            return
+        guard isValidateNote() else { return }
+        
+        if let draftNote = draftNote{
+            postDraftNote(draftNote)
+        }else{
+            createNote()
         }
     }
     
