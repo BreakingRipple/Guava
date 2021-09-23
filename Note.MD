@@ -193,3 +193,9 @@
 ### PopupDialog
         https://github.com/Orderella/PopupDialog
         https://github.com/huri000/SwiftEntryKit
+
+### FaveButton
+        https://github.com/janselv/fave-button
+
+### ImageSlideshow
+        https://github.com/zvonicek/ImageSlideshow

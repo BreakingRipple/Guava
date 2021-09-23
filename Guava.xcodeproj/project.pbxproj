@@ -24,6 +24,10 @@
 		2E3DCDC426E3A07100149F59 /* NoteEditVC-UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3DCDC326E3A07100149F59 /* NoteEditVC-UI.swift */; };
 		2E3DCDC626E3B89600149F59 /* NoteEditVC-DraftNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3DCDC526E3B89600149F59 /* NoteEditVC-DraftNote.swift */; };
 		2E3DCDC826E3D32C00149F59 /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3DCDC726E3D32C00149F59 /* MeVC.swift */; };
+		2E78C97F26FB0E6B003C9C0B /* NoteDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E78C97E26FB0E6B003C9C0B /* NoteDetailVC.swift */; };
+		2E78C98226FB134B003C9C0B /* NoteDetailVC-UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E78C98126FB134B003C9C0B /* NoteDetailVC-UI.swift */; };
+		2E78C98426FB1367003C9C0B /* NoteDetailVC-Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E78C98326FB1367003C9C0B /* NoteDetailVC-Config.swift */; };
+		2E78C98626FB1990003C9C0B /* CustomerViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E78C98526FB1990003C9C0B /* CustomerViews.swift */; };
 		2E84140026EB3018006DB877 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8413FF26EB3018006DB877 /* LoginVC.swift */; };
 		2E84140326EB3284006DB877 /* LocalLogin-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E84140226EB3284006DB877 /* LocalLogin-Extensions.swift */; };
 		2E84140826F0301E006DB877 /* SocialLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E84140726F0301D006DB877 /* SocialLoginVC.swift */; };
@@ -93,6 +97,10 @@
 		2E3DCDC326E3A07100149F59 /* NoteEditVC-UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-UI.swift"; sourceTree = "<group>"; };
 		2E3DCDC526E3B89600149F59 /* NoteEditVC-DraftNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-DraftNote.swift"; sourceTree = "<group>"; };
 		2E3DCDC726E3D32C00149F59 /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
+		2E78C97E26FB0E6B003C9C0B /* NoteDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailVC.swift; sourceTree = "<group>"; };
+		2E78C98126FB134B003C9C0B /* NoteDetailVC-UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-UI.swift"; sourceTree = "<group>"; };
+		2E78C98326FB1367003C9C0B /* NoteDetailVC-Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetailVC-Config.swift"; sourceTree = "<group>"; };
+		2E78C98526FB1990003C9C0B /* CustomerViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerViews.swift; sourceTree = "<group>"; };
 		2E8413FF26EB3018006DB877 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		2E84140226EB3284006DB877 /* LocalLogin-Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalLogin-Extensions.swift"; sourceTree = "<group>"; };
 		2E84140726F0301D006DB877 /* SocialLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginVC.swift; sourceTree = "<group>"; };
@@ -268,13 +276,14 @@
 				2E84146526F1A429006DB877 /* Guava.entitlements */,
 				2E17C5AC26CF956200AE335F /* AppDelegate.swift */,
 				2E17C5AE26CF956200AE335F /* SceneDelegate.swift */,
-				2E17C5B226CF956200AE335F /* Main.storyboard */,
 				2EC348FE26D2AF6700CAA637 /* TabBarC.swift */,
-				2EAC7FB926F3281600E8DAAC /* Me */,
-				2E84140126EB301E006DB877 /* Login */,
-				2EC3490E26D933D300CAA637 /* NoteEdit */,
+				2E17C5B226CF956200AE335F /* Main.storyboard */,
 				2EC348E026D1139200CAA637 /* Home */,
 				2EC348E526D2560700CAA637 /* Waterfall */,
+				2EC3490E26D933D300CAA637 /* NoteEdit */,
+				2E78C98026FB0E71003C9C0B /* NoteDetail */,
+				2EAC7FB926F3281600E8DAAC /* Me */,
+				2E84140126EB301E006DB877 /* Login */,
 				2EC348E626D2561300CAA637 /* Common */,
 				2E17C5B826CF956400AE335F /* Assets.xcassets */,
 				2EC348FD26D2A1A200CAA637 /* Resources */,
@@ -286,6 +295,16 @@
 				2E3DCDB526E211A000149F59 /* TV.mp4 */,
 			);
 			path = Guava;
+			sourceTree = "<group>";
+		};
+		2E78C98026FB0E71003C9C0B /* NoteDetail */ = {
+			isa = PBXGroup;
+			children = (
+				2E78C97E26FB0E6B003C9C0B /* NoteDetailVC.swift */,
+				2E78C98126FB134B003C9C0B /* NoteDetailVC-UI.swift */,
+				2E78C98326FB1367003C9C0B /* NoteDetailVC-Config.swift */,
+			);
+			path = NoteDetail;
 			sourceTree = "<group>";
 		};
 		2E84140126EB301E006DB877 /* Login */ = {
@@ -457,6 +476,7 @@
 				2EC348DE26D1120F00CAA637 /* Constants.swift */,
 				2EBE5CFD26F420DC008B9092 /* temporaty.swift */,
 				2EC3492026DDCF0700CAA637 /* Protocols.swift */,
+				2E78C98526FB1990003C9C0B /* CustomerViews.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -682,6 +702,7 @@
 				2E3DCDC626E3B89600149F59 /* NoteEditVC-DraftNote.swift in Sources */,
 				2EC3490826D6863E00CAA637 /* NoteEditVC.swift in Sources */,
 				2E84140A26F0306B006DB877 /* SocialLoginVC-Alipay.swift in Sources */,
+				2E78C98226FB134B003C9C0B /* NoteDetailVC-UI.swift in Sources */,
 				2E17C5AD26CF956200AE335F /* AppDelegate.swift in Sources */,
 				2E84140326EB3284006DB877 /* LocalLogin-Extensions.swift in Sources */,
 				2E3DCDC826E3D32C00149F59 /* MeVC.swift in Sources */,
@@ -690,6 +711,7 @@
 				2E3DCDC426E3A07100149F59 /* NoteEditVC-UI.swift in Sources */,
 				2EC3490126D2B19200CAA637 /* PostVC.swift in Sources */,
 				2EC3491526DB69EC00CAA637 /* NoteEditVC-CollectionView.swift in Sources */,
+				2E78C97F26FB0E6B003C9C0B /* NoteDetailVC.swift in Sources */,
 				2E84140026EB3018006DB877 /* LoginVC.swift in Sources */,
 				2EC3491D26DDC0A900CAA637 /* ChannelVC.swift in Sources */,
 				2E84146926F1E8CC006DB877 /* PasswordLoginVC.swift in Sources */,
@@ -708,12 +730,14 @@
 				2EC3491F26DDC23B00CAA637 /* ChannelTableVC.swift in Sources */,
 				2E3DCDBC26E272F300149F59 /* WaterfallVC-Config.swift in Sources */,
 				2EC348DB26D10A0500CAA637 /* DiscoveryVC.swift in Sources */,
+				2E78C98426FB1367003C9C0B /* NoteDetailVC-Config.swift in Sources */,
 				2EBE5CFE26F420DC008B9092 /* temporaty.swift in Sources */,
 				2EC348DF26D1120F00CAA637 /* Constants.swift in Sources */,
 				2EC3492326DDF54900CAA637 /* POIVC.swift in Sources */,
 				2EC3492926DF3B0500CAA637 /* POIVC-Config.swift in Sources */,
 				2E84146726F1E75F006DB877 /* CodeLoginVC.swift in Sources */,
 				2E3DCDB826E236B100149F59 /* DraftNoteWaterfallCell.swift in Sources */,
+				2E78C98626FB1990003C9C0B /* CustomerViews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

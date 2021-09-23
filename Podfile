@@ -21,4 +21,6 @@ target 'Guava' do
   pod  'AlipaySDK-iOS'
   pod 'LeanCloud'
   pod 'PopupDialog', '~> 1.1'
+  pod 'FaveButton'
+  pod 'ImageSlideshow', '~> 1.9.0'
 end
